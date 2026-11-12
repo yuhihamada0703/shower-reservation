@@ -1,0 +1,1245 @@
+<mxfile host="app.diagrams.net" pages="5">
+  <diagram name="画面設計書（ログイン画面）" id="scr1">
+    <mxGraphModel dx="2747" dy="1709" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="scr1-1" parent="1" style="whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;画面設計書&lt;/font&gt;" vertex="1">
+          <mxGeometry height="90" width="160" x="40" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="scr1-2" parent="1" style="whiteSpace=wrap;html=1;align=left;" value="&lt;ul&gt;&lt;li&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;【ログイン画面】画面名、URL、画面概要、初期表示内容、表示項目、入力項目、入力制限、ボタン動作、利用APIなどを整理する&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;ワイヤーフレームで「どこに何を表示するのか」を示し、画面設計の表で各項目の仕様を整理する&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;" vertex="1">
+          <mxGeometry height="90" width="920" x="200" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="scr1-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;ワイヤーフレーム&lt;/b&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="450" x="120" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="scr1-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="420" width="920" x="120" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="scr1-5" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;画面設計&lt;/b&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="450" x="120" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="scr1-6" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 23px;&quot;&gt;&lt;b&gt;予約管理システム&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="36" width="360" x="130" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="scr1-7" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;b&gt;ログイン&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="200" x="490" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="scr1-8" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="ログインID" vertex="1">
+          <mxGeometry height="30" width="120" x="360" y="236" as="geometry" />
+        </mxCell>
+        <mxCell id="scr1-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=6;" value="" vertex="1">
+          <mxGeometry height="32" width="320" x="490" y="236" as="geometry" />
+        </mxCell>
+        <mxCell id="scr1-10" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="パスワード" vertex="1">
+          <mxGeometry height="30" width="120" x="360" y="286" as="geometry" />
+        </mxCell>
+        <mxCell id="scr1-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=6;" value="●●●●●●●●" vertex="1">
+          <mxGeometry height="32" width="320" x="490" y="286" as="geometry" />
+        </mxCell>
+        <mxCell id="scr1-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="ログイン" vertex="1">
+          <mxGeometry height="42" width="150" x="490" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="scr1-13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="学生登録画面へ" vertex="1">
+          <mxGeometry height="42" width="150" x="660" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="scr1-14" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;font color=&quot;#666666&quot;&gt;※エラーメッセージの表示欄（ログイン失敗時）&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="320" x="490" y="404" as="geometry" />
+        </mxCell>
+        <mxCell id="scr1-15" parent="1" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;fontSize=14;" value="" vertex="1">
+          <mxGeometry height="1052" width="920" x="120" y="632" as="geometry" />
+        </mxCell>
+        <mxCell id="scr1-16" parent="scr1-15" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry height="40" width="920" as="geometry" />
+        </mxCell>
+        <mxCell id="scr1-17" parent="scr1-16" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=#314354;overflow=hidden;fillColor=#647687;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;fontColor=#ffffff;" value="整理項目" vertex="1">
+          <mxGeometry height="40" width="160" as="geometry" />
+        </mxCell>
+        <mxCell id="scr1-18" parent="scr1-16" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=#314354;overflow=hidden;fillColor=#647687;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;fontColor=#ffffff;" value="内容" vertex="1">
+          <mxGeometry height="40" width="760" x="160" as="geometry" />
+        </mxCell>
+        <mxCell id="scr1-19" parent="scr1-15" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry height="44" width="920" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="scr1-20" parent="scr1-19" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="画面名" vertex="1">
+          <mxGeometry height="44" width="160" as="geometry" />
+        </mxCell>
+        <mxCell id="scr1-21" parent="scr1-19" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="ログイン画面" vertex="1">
+          <mxGeometry height="44" width="760" x="160" as="geometry" />
+        </mxCell>
+        <mxCell id="scr1-22" parent="scr1-15" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry height="44" width="920" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="scr1-23" parent="scr1-22" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="URL" vertex="1">
+          <mxGeometry height="44" width="160" as="geometry" />
+        </mxCell>
+        <mxCell id="scr1-24" parent="scr1-22" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="/login" vertex="1">
+          <mxGeometry height="44" width="760" x="160" as="geometry" />
+        </mxCell>
+        <mxCell id="scr1-25" parent="scr1-15" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry height="58" width="920" y="128" as="geometry" />
+        </mxCell>
+        <mxCell id="scr1-26" parent="scr1-25" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="画面概要" vertex="1">
+          <mxGeometry height="58" width="160" as="geometry" />
+        </mxCell>
+        <mxCell id="scr1-27" parent="scr1-25" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="学生・教師が、ログインIDとパスワードを入力して、システムにログインする画面。学生登録画面への導線を配置する" vertex="1">
+          <mxGeometry height="58" width="760" x="160" as="geometry" />
+        </mxCell>
+        <mxCell id="scr1-28" parent="scr1-15" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry height="58" width="920" y="186" as="geometry" />
+        </mxCell>
+        <mxCell id="scr1-29" parent="scr1-28" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="初期表示内容 / 初期表示ロジック" vertex="1">
+          <mxGeometry height="58" width="160" as="geometry" />
+        </mxCell>
+        <mxCell id="scr1-30" parent="scr1-28" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="画面タイトル、ログインID・パスワードの入力欄、ログインボタン、学生登録画面への導線ボタンを表示する。初期表示時に使用するAPIはない" vertex="1">
+          <mxGeometry height="58" width="760" x="160" as="geometry" />
+        </mxCell>
+        <mxCell id="scr1-31" parent="scr1-15" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry height="142" width="920" y="244" as="geometry" />
+        </mxCell>
+        <mxCell id="scr1-32" parent="scr1-31" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="表示項目" vertex="1">
+          <mxGeometry height="142" width="160" as="geometry" />
+        </mxCell>
+        <mxCell id="scr1-33" parent="scr1-31" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="・画面タイトル&lt;br&gt;・ログインID入力欄&lt;br&gt;・パスワード入力欄&lt;br&gt;・ログインボタン&lt;br&gt;・学生登録画面導線ボタン&lt;br&gt;・エラーメッセージ表示欄" vertex="1">
+          <mxGeometry height="142" width="760" x="160" as="geometry" />
+        </mxCell>
+        <mxCell id="scr1-34" parent="scr1-15" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry height="58" width="920" y="386" as="geometry" />
+        </mxCell>
+        <mxCell id="scr1-35" parent="scr1-34" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="入力項目" vertex="1">
+          <mxGeometry height="58" width="160" as="geometry" />
+        </mxCell>
+        <mxCell id="scr1-36" parent="scr1-34" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="・ログインID（学生は学生番号、教師は共用のID）&lt;br&gt;・パスワード" vertex="1">
+          <mxGeometry height="58" width="760" x="160" as="geometry" />
+        </mxCell>
+        <mxCell id="scr1-37" parent="scr1-15" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry height="58" width="920" y="444" as="geometry" />
+        </mxCell>
+        <mxCell id="scr1-38" parent="scr1-37" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="入力制限" vertex="1">
+          <mxGeometry height="58" width="160" as="geometry" />
+        </mxCell>
+        <mxCell id="scr1-39" parent="scr1-37" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="・ログインID、パスワードともに必須&lt;br&gt;・パスワードは10字以内。入力した内容は伏せ字で表示する" vertex="1">
+          <mxGeometry height="58" width="760" x="160" as="geometry" />
+        </mxCell>
+        <mxCell id="scr1-40" parent="scr1-15" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry height="58" width="920" y="502" as="geometry" />
+        </mxCell>
+        <mxCell id="scr1-41" parent="scr1-40" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="ボタン / リンク" vertex="1">
+          <mxGeometry height="58" width="160" as="geometry" />
+        </mxCell>
+        <mxCell id="scr1-42" parent="scr1-40" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="・ログインボタン&lt;br&gt;・学生登録画面導線ボタン" vertex="1">
+          <mxGeometry height="58" width="760" x="160" as="geometry" />
+        </mxCell>
+        <mxCell id="scr1-43" parent="scr1-15" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry height="121" width="920" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="scr1-44" parent="scr1-43" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="ボタン / リンク 押下時の動作" vertex="1">
+          <mxGeometry height="121" width="160" as="geometry" />
+        </mxCell>
+        <mxCell id="scr1-45" parent="scr1-43" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="・ログインボタン&lt;br&gt;　→入力内容をチェックして、ログイン用APIを呼び出す。成功した場合、学生はトップページへ、教師は学生一覧画面へ遷移する。失敗した場合は、エラーメッセージを表示して、この画面にとどまる&lt;br&gt;・学生登録画面導線ボタン&lt;br&gt;　→学生登録画面へ遷移する" vertex="1">
+          <mxGeometry height="121" width="760" x="160" as="geometry" />
+        </mxCell>
+        <mxCell id="scr1-46" parent="scr1-15" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry height="58" width="920" y="681" as="geometry" />
+        </mxCell>
+        <mxCell id="scr1-47" parent="scr1-46" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="画面遷移元" vertex="1">
+          <mxGeometry height="58" width="160" as="geometry" />
+        </mxCell>
+        <mxCell id="scr1-48" parent="scr1-46" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="学生登録画面（登録完了後、戻る操作）、トップページ・学生一覧画面（ログアウト後）。未ログインでほかの画面にアクセスした場合" vertex="1">
+          <mxGeometry height="58" width="760" x="160" as="geometry" />
+        </mxCell>
+        <mxCell id="scr1-49" parent="scr1-15" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry height="44" width="920" y="739" as="geometry" />
+        </mxCell>
+        <mxCell id="scr1-50" parent="scr1-49" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="画面遷移先" vertex="1">
+          <mxGeometry height="44" width="160" as="geometry" />
+        </mxCell>
+        <mxCell id="scr1-51" parent="scr1-49" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="トップページ（学生）、学生一覧画面（教師）、学生登録画面" vertex="1">
+          <mxGeometry height="44" width="760" x="160" as="geometry" />
+        </mxCell>
+        <mxCell id="scr1-52" parent="scr1-15" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry height="44" width="920" y="783" as="geometry" />
+        </mxCell>
+        <mxCell id="scr1-53" parent="scr1-52" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="利用API" vertex="1">
+          <mxGeometry height="44" width="160" as="geometry" />
+        </mxCell>
+        <mxCell id="scr1-54" parent="scr1-52" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="ログイン用API（POST /login）" vertex="1">
+          <mxGeometry height="44" width="760" x="160" as="geometry" />
+        </mxCell>
+        <mxCell id="scr1-55" parent="scr1-15" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry height="79" width="920" y="827" as="geometry" />
+        </mxCell>
+        <mxCell id="scr1-56" parent="scr1-55" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="エラーメッセージ" vertex="1">
+          <mxGeometry height="79" width="160" as="geometry" />
+        </mxCell>
+        <mxCell id="scr1-57" parent="scr1-55" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="・未入力：「ログインIDとパスワードを入力してください」&lt;br&gt;・認証失敗：「ログインIDまたはパスワードが違います」&lt;br&gt;・サーバーエラー：「エラーが発生しました。しばらくしてからもう一度お試しください」" vertex="1">
+          <mxGeometry height="79" width="760" x="160" as="geometry" />
+        </mxCell>
+        <mxCell id="scr1-58" parent="scr1-15" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry height="58" width="920" y="906" as="geometry" />
+        </mxCell>
+        <mxCell id="scr1-59" parent="scr1-58" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="表示条件・制御内容" vertex="1">
+          <mxGeometry height="58" width="160" as="geometry" />
+        </mxCell>
+        <mxCell id="scr1-60" parent="scr1-58" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="ログインしていなくても表示できる。未ログインの利用者が、学生登録画面以外の画面にアクセスした場合は、この画面へ遷移する" vertex="1">
+          <mxGeometry height="58" width="760" x="160" as="geometry" />
+        </mxCell>
+        <mxCell id="scr1-61" parent="scr1-15" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry height="44" width="920" y="964" as="geometry" />
+        </mxCell>
+        <mxCell id="scr1-62" parent="scr1-61" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="対象ユーザー / 権限" vertex="1">
+          <mxGeometry height="44" width="160" as="geometry" />
+        </mxCell>
+        <mxCell id="scr1-63" parent="scr1-61" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="学生、教師（ログイン前の利用者）" vertex="1">
+          <mxGeometry height="44" width="760" x="160" as="geometry" />
+        </mxCell>
+        <mxCell id="scr1-64" parent="scr1-15" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry height="44" width="920" y="1008" as="geometry" />
+        </mxCell>
+        <mxCell id="scr1-65" parent="scr1-64" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="備考" vertex="1">
+          <mxGeometry height="44" width="160" as="geometry" />
+        </mxCell>
+        <mxCell id="scr1-66" parent="scr1-64" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="パスワードはハッシュ化して保存するため、画面上に表示することはない" vertex="1">
+          <mxGeometry height="44" width="760" x="160" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="画面設計書（学生登録画面）" id="scr2">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="scr2-1" parent="1" style="whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;画面設計書&lt;/font&gt;" vertex="1">
+          <mxGeometry x="40" y="10" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="scr2-2" parent="1" style="whiteSpace=wrap;html=1;align=left;" value="&lt;ul&gt;&lt;li&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;【学生登録画面】画面名、URL、画面概要、初期表示内容、表示項目、入力項目、入力制限、ボタン動作、利用APIなどを整理する&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;ワイヤーフレームで「どこに何を表示するのか」を示し、画面設計の表で各項目の仕様を整理する&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;" vertex="1">
+          <mxGeometry x="200" y="10" width="920" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="scr2-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;ワイヤーフレーム&lt;/b&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry x="120" y="110" width="450" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="scr2-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry x="120" y="140" width="920" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="scr2-5" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;画面設計&lt;/b&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry x="120" y="590" width="450" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="scr2-6" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 23px;&quot;&gt;&lt;b&gt;予約管理システム&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry x="130" y="150" width="360" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="scr2-7" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;b&gt;学生登録&lt;/b&gt;" vertex="1">
+          <mxGeometry x="130" y="186" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="scr2-8" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="学生番号（ログインID）" vertex="1">
+          <mxGeometry x="140" y="222" width="190" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="scr2-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=6;" value="" vertex="1">
+          <mxGeometry x="340" y="222" width="300" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="scr2-10" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="パスワード" vertex="1">
+          <mxGeometry x="140" y="266" width="190" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="scr2-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=6;" value="●●●●●●" vertex="1">
+          <mxGeometry x="340" y="266" width="300" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="scr2-12" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="名前" vertex="1">
+          <mxGeometry x="140" y="310" width="190" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="scr2-13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=6;" value="" vertex="1">
+          <mxGeometry x="340" y="310" width="300" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="scr2-14" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="学年" vertex="1">
+          <mxGeometry x="140" y="354" width="190" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="scr2-15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=6;" value="" vertex="1">
+          <mxGeometry x="340" y="354" width="300" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="scr2-16" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="所属部活（任意）" vertex="1">
+          <mxGeometry x="140" y="398" width="190" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="scr2-17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=6;" value="" vertex="1">
+          <mxGeometry x="340" y="398" width="300" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="scr2-18" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="メールアドレス（学生専用）" vertex="1">
+          <mxGeometry x="140" y="442" width="190" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="scr2-19" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=6;" value="" vertex="1">
+          <mxGeometry x="340" y="442" width="300" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="scr2-20" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="登録する" vertex="1">
+          <mxGeometry x="340" y="494" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="scr2-21" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="ログイン画面へ戻る" vertex="1">
+          <mxGeometry x="500" y="494" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="scr2-22" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;font color=&quot;#666666&quot;&gt;▶&lt;/font&gt;" vertex="1">
+          <mxGeometry x="662" y="318" width="30" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="scr2-23" parent="1" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;align=left;spacingLeft=10;verticalAlign=top;spacingTop=10;" value="&lt;b&gt;以下の内容で登録しますか？&lt;/b&gt;&lt;br&gt;&lt;br&gt;学生番号：20230001&lt;br&gt;パスワード：●●●●●●&lt;br&gt;名前：山田 太郎&lt;br&gt;学年：2年&lt;br&gt;所属部活：サッカー部&lt;br&gt;メール：s20230001@example.ac.jp" vertex="1">
+          <mxGeometry x="700" y="190" width="320" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="scr2-24" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="登録する" vertex="1">
+          <mxGeometry x="720" y="386" width="130" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="scr2-25" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="修正する" vertex="1">
+          <mxGeometry x="870" y="386" width="130" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="scr2-26" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;font color=&quot;#666666&quot;&gt;登録確認ポップアップ&lt;/font&gt;" vertex="1">
+          <mxGeometry x="700" y="166" width="260" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="scr2-27" parent="1" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;fontSize=14;" value="" vertex="1">
+          <mxGeometry x="120" y="632" width="920" height="1374" as="geometry" />
+        </mxCell>
+        <mxCell id="scr2-28" parent="scr2-27" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry y="0" width="920" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="scr2-29" parent="scr2-28" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=#314354;overflow=hidden;fillColor=#647687;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;fontColor=#ffffff;" value="整理項目" vertex="1">
+          <mxGeometry width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="scr2-30" parent="scr2-28" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=#314354;overflow=hidden;fillColor=#647687;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;fontColor=#ffffff;" value="内容" vertex="1">
+          <mxGeometry width="760" height="40" as="geometry" x="160" />
+        </mxCell>
+        <mxCell id="scr2-31" parent="scr2-27" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry y="40" width="920" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="scr2-32" parent="scr2-31" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="画面名" vertex="1">
+          <mxGeometry width="160" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="scr2-33" parent="scr2-31" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="学生登録画面" vertex="1">
+          <mxGeometry width="760" height="44" as="geometry" x="160" />
+        </mxCell>
+        <mxCell id="scr2-34" parent="scr2-27" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry y="84" width="920" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="scr2-35" parent="scr2-34" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="URL" vertex="1">
+          <mxGeometry width="160" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="scr2-36" parent="scr2-34" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="/register" vertex="1">
+          <mxGeometry width="760" height="44" as="geometry" x="160" />
+        </mxCell>
+        <mxCell id="scr2-37" parent="scr2-27" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry y="128" width="920" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="scr2-38" parent="scr2-37" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="画面概要" vertex="1">
+          <mxGeometry width="160" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="scr2-39" parent="scr2-37" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="ログイン前の学生が、新しく自分の情報を登録する画面。登録ボタンを押すと、登録確認ポップアップを表示する" vertex="1">
+          <mxGeometry width="760" height="58" as="geometry" x="160" />
+        </mxCell>
+        <mxCell id="scr2-40" parent="scr2-27" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry y="186" width="920" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="scr2-41" parent="scr2-40" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="初期表示内容 / 初期表示ロジック" vertex="1">
+          <mxGeometry width="160" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="scr2-42" parent="scr2-40" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="画面タイトルと、空の入力欄、登録ボタン、ログイン画面へ戻るボタンを表示する。初期表示時に使用するAPIはない" vertex="1">
+          <mxGeometry width="760" height="58" as="geometry" x="160" />
+        </mxCell>
+        <mxCell id="scr2-43" parent="scr2-27" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry y="244" width="920" height="142" as="geometry" />
+        </mxCell>
+        <mxCell id="scr2-44" parent="scr2-43" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="表示項目" vertex="1">
+          <mxGeometry width="160" height="142" as="geometry" />
+        </mxCell>
+        <mxCell id="scr2-45" parent="scr2-43" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="・画面タイトル&lt;br&gt;・学生番号（ログインID）、パスワード、名前、学年、所属部活、メールアドレスの入力欄&lt;br&gt;・登録ボタン&lt;br&gt;・ログイン画面へ戻るボタン&lt;br&gt;・エラーメッセージ表示欄&lt;br&gt;・登録確認ポップアップ（入力内容の一覧、「登録する」ボタン、「修正する」ボタン）" vertex="1">
+          <mxGeometry width="760" height="142" as="geometry" x="160" />
+        </mxCell>
+        <mxCell id="scr2-46" parent="scr2-27" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry y="386" width="920" height="142" as="geometry" />
+        </mxCell>
+        <mxCell id="scr2-47" parent="scr2-46" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="入力項目" vertex="1">
+          <mxGeometry width="160" height="142" as="geometry" />
+        </mxCell>
+        <mxCell id="scr2-48" parent="scr2-46" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="・学生番号（ログインID）&lt;br&gt;・パスワード&lt;br&gt;・名前&lt;br&gt;・学年&lt;br&gt;・所属部活&lt;br&gt;・メールアドレス" vertex="1">
+          <mxGeometry width="760" height="142" as="geometry" x="160" />
+        </mxCell>
+        <mxCell id="scr2-49" parent="scr2-27" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry y="528" width="920" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="scr2-50" parent="scr2-49" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="入力制限" vertex="1">
+          <mxGeometry width="160" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="scr2-51" parent="scr2-49" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="・学生番号、パスワード、名前、学年、メールアドレスは必須。所属部活は任意（空欄可）&lt;br&gt;・名前、学年、所属部活、パスワードは10字以内&lt;br&gt;・学生番号は、学生番号の形式のみ。すでに登録されている学生番号は登録できない&lt;br&gt;・メールアドレスは、学生専用のメールアドレスのみ" vertex="1">
+          <mxGeometry width="760" height="100" as="geometry" x="160" />
+        </mxCell>
+        <mxCell id="scr2-52" parent="scr2-27" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry y="628" width="920" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="scr2-53" parent="scr2-52" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="ボタン / リンク" vertex="1">
+          <mxGeometry width="160" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="scr2-54" parent="scr2-52" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="・登録ボタン&lt;br&gt;・ログイン画面へ戻るボタン&lt;br&gt;・登録確認ポップアップの「登録する」ボタン&lt;br&gt;・登録確認ポップアップの「修正する」ボタン" vertex="1">
+          <mxGeometry width="760" height="100" as="geometry" x="160" />
+        </mxCell>
+        <mxCell id="scr2-55" parent="scr2-27" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry y="728" width="920" height="247" as="geometry" />
+        </mxCell>
+        <mxCell id="scr2-56" parent="scr2-55" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="ボタン / リンク 押下時の動作" vertex="1">
+          <mxGeometry width="160" height="247" as="geometry" />
+        </mxCell>
+        <mxCell id="scr2-57" parent="scr2-55" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="・登録ボタン&lt;br&gt;　→入力内容をチェックして、問題がなければ、登録確認ポップアップを表示する（「以下の内容で登録しますか？」。パスワードは伏せ字で表示する）。問題がある場合は、エラーメッセージを表示して、ポップアップは表示しない&lt;br&gt;・登録確認ポップアップの「登録する」ボタン&lt;br&gt;　→学生登録APIを呼び出す。成功した場合は、ログイン画面へ遷移する。失敗した場合（登録済みの学生番号など）は、ポップアップを閉じて、エラーメッセージを入力画面に表示する&lt;br&gt;・登録確認ポップアップの「修正する」ボタン&lt;br&gt;　→ポップアップを閉じて、入力画面に戻る（入力した内容は残る）&lt;br&gt;・ログイン画面へ戻るボタン&lt;br&gt;　→入力内容を破棄して、ログイン画面へ遷移する" vertex="1">
+          <mxGeometry width="760" height="247" as="geometry" x="160" />
+        </mxCell>
+        <mxCell id="scr2-58" parent="scr2-27" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry y="975" width="920" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="scr2-59" parent="scr2-58" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="画面遷移元" vertex="1">
+          <mxGeometry width="160" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="scr2-60" parent="scr2-58" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="ログイン画面" vertex="1">
+          <mxGeometry width="760" height="44" as="geometry" x="160" />
+        </mxCell>
+        <mxCell id="scr2-61" parent="scr2-27" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry y="1019" width="920" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="scr2-62" parent="scr2-61" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="画面遷移先" vertex="1">
+          <mxGeometry width="160" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="scr2-63" parent="scr2-61" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="ログイン画面" vertex="1">
+          <mxGeometry width="760" height="44" as="geometry" x="160" />
+        </mxCell>
+        <mxCell id="scr2-64" parent="scr2-27" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry y="1063" width="920" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="scr2-65" parent="scr2-64" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="利用API" vertex="1">
+          <mxGeometry width="160" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="scr2-66" parent="scr2-64" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="学生登録API（POST /students）" vertex="1">
+          <mxGeometry width="760" height="44" as="geometry" x="160" />
+        </mxCell>
+        <mxCell id="scr2-67" parent="scr2-27" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry y="1107" width="920" height="121" as="geometry" />
+        </mxCell>
+        <mxCell id="scr2-68" parent="scr2-67" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="エラーメッセージ" vertex="1">
+          <mxGeometry width="160" height="121" as="geometry" />
+        </mxCell>
+        <mxCell id="scr2-69" parent="scr2-67" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="・未入力：「（項目名）を入力してください」&lt;br&gt;・10字を超える入力：「（項目名）は10字以内で入力してください」&lt;br&gt;・学生番号の形式違い：「学生番号を正しく入力してください」&lt;br&gt;・学生専用以外のメールアドレス：「学生専用のメールアドレスを入力してください」&lt;br&gt;・登録済みの学生番号：「この学生番号はすでに登録されています」" vertex="1">
+          <mxGeometry width="760" height="121" as="geometry" x="160" />
+        </mxCell>
+        <mxCell id="scr2-70" parent="scr2-27" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry y="1228" width="920" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="scr2-71" parent="scr2-70" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="表示条件・制御内容" vertex="1">
+          <mxGeometry width="160" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="scr2-72" parent="scr2-70" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="ログインしていなくても表示できる" vertex="1">
+          <mxGeometry width="760" height="44" as="geometry" x="160" />
+        </mxCell>
+        <mxCell id="scr2-73" parent="scr2-27" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry y="1272" width="920" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="scr2-74" parent="scr2-73" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="対象ユーザー / 権限" vertex="1">
+          <mxGeometry width="160" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="scr2-75" parent="scr2-73" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="学生（ログイン前）" vertex="1">
+          <mxGeometry width="760" height="44" as="geometry" x="160" />
+        </mxCell>
+        <mxCell id="scr2-76" parent="scr2-27" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry y="1316" width="920" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="scr2-77" parent="scr2-76" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="備考" vertex="1">
+          <mxGeometry width="160" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="scr2-78" parent="scr2-76" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="登録できるのは学生のみ。教師のアカウントは、代表教師が作成したものを初期データとして用意するため、この画面では登録しない。ポップアップの表示中は、背面の入力画面を操作できない" vertex="1">
+          <mxGeometry width="760" height="58" as="geometry" x="160" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="画面設計書（トップページ）" id="scr3">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="scr3-1" parent="1" style="whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;画面設計書&lt;/font&gt;" vertex="1">
+          <mxGeometry x="40" y="10" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="scr3-2" parent="1" style="whiteSpace=wrap;html=1;align=left;" value="&lt;ul&gt;&lt;li&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;【トップページ】画面名、URL、画面概要、初期表示内容、表示項目、入力項目、入力制限、ボタン動作、利用APIなどを整理する&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;ワイヤーフレームで「どこに何を表示するのか」を示し、画面設計の表で各項目の仕様を整理する&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;" vertex="1">
+          <mxGeometry x="200" y="10" width="920" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="scr3-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;ワイヤーフレーム&lt;/b&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry x="120" y="110" width="450" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="scr3-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry x="120" y="140" width="920" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="scr3-5" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;画面設計&lt;/b&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry x="120" y="590" width="450" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="scr3-6" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 23px;&quot;&gt;&lt;b&gt;予約管理システム&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry x="130" y="150" width="360" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="scr3-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="情報編集" vertex="1">
+          <mxGeometry x="800" y="152" width="110" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="scr3-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="ログアウト" vertex="1">
+          <mxGeometry x="920" y="152" width="110" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="scr3-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry x="140" y="200" width="300" height="345" as="geometry" />
+        </mxCell>
+        <mxCell id="scr3-10" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;b&gt;使用状況&lt;/b&gt;" vertex="1">
+          <mxGeometry x="150" y="204" width="120" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="scr3-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="更新" vertex="1">
+          <mxGeometry x="340" y="206" width="90" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="scr3-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="シャワー室1&lt;br&gt;&lt;b&gt;2年　山田 太郎&lt;/b&gt;" vertex="1">
+          <mxGeometry x="150" y="246" width="280" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="scr3-13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="シャワー室2&lt;br&gt;&lt;b&gt;空&lt;/b&gt;" vertex="1">
+          <mxGeometry x="150" y="332" width="280" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="scr3-14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry x="460" y="200" width="570" height="345" as="geometry" />
+        </mxCell>
+        <mxCell id="scr3-15" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;b&gt;予約状況&lt;/b&gt;" vertex="1">
+          <mxGeometry x="470" y="204" width="120" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="scr3-16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="当日" vertex="1">
+          <mxGeometry x="850" y="206" width="80" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="scr3-17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="翌日" vertex="1">
+          <mxGeometry x="940" y="206" width="80" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="scr3-18" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontColor=#666666;" value="時間" vertex="1">
+          <mxGeometry x="470" y="244" width="70" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="scr3-19" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontColor=#666666;" value="シャワー室" vertex="1">
+          <mxGeometry x="545" y="244" width="100" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="scr3-20" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontColor=#666666;" value="学年・氏名" vertex="1">
+          <mxGeometry x="660" y="244" width="200" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="scr3-21" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="19:00" vertex="1">
+          <mxGeometry x="470" y="272" width="70" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="scr3-22" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="1" vertex="1">
+          <mxGeometry x="545" y="272" width="80" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="scr3-23" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="2年　山田 太郎" vertex="1">
+          <mxGeometry x="660" y="272" width="230" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="scr3-24" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="19:00" vertex="1">
+          <mxGeometry x="470" y="302" width="70" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="scr3-25" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="2" vertex="1">
+          <mxGeometry x="545" y="302" width="80" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="scr3-26" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="1年　佐藤 花子" vertex="1">
+          <mxGeometry x="660" y="302" width="230" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="scr3-27" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="" vertex="1">
+          <mxGeometry x="466" y="331" width="558" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="scr3-28" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="19:15" vertex="1">
+          <mxGeometry x="470" y="332" width="70" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="scr3-29" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="1" vertex="1">
+          <mxGeometry x="545" y="332" width="80" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="scr3-30" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="3年　鈴木 一郎（自分）" vertex="1">
+          <mxGeometry x="660" y="332" width="230" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="scr3-31" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="キャンセル" vertex="1">
+          <mxGeometry x="910" y="333" width="100" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="scr3-32" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="19:30" vertex="1">
+          <mxGeometry x="470" y="362" width="70" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="scr3-33" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="2" vertex="1">
+          <mxGeometry x="545" y="362" width="80" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="scr3-34" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="2年　田中 次郎" vertex="1">
+          <mxGeometry x="660" y="362" width="230" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="scr3-35" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;b&gt;予約する&lt;/b&gt;" vertex="1">
+          <mxGeometry x="470" y="394" width="120" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="scr3-36" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=10;fontColor=#666666;" value="日付" vertex="1">
+          <mxGeometry x="470" y="420" width="60" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="scr3-37" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=10;fontColor=#666666;" value="シャワー室" vertex="1">
+          <mxGeometry x="590" y="420" width="80" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="scr3-38" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=10;fontColor=#666666;" value="時間" vertex="1">
+          <mxGeometry x="710" y="420" width="60" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="scr3-39" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=6;" value="当日" vertex="1">
+          <mxGeometry x="470" y="440" width="110" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="scr3-40" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=6;" value="1" vertex="1">
+          <mxGeometry x="590" y="440" width="110" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="scr3-41" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=6;" value="19:45" vertex="1">
+          <mxGeometry x="710" y="440" width="130" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="scr3-42" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="予約する" vertex="1">
+          <mxGeometry x="860" y="440" width="150" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="scr3-43" parent="1" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;fontSize=14;" value="" vertex="1">
+          <mxGeometry x="120" y="632" width="920" height="1710" as="geometry" />
+        </mxCell>
+        <mxCell id="scr3-44" parent="scr3-43" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry y="0" width="920" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="scr3-45" parent="scr3-44" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=#314354;overflow=hidden;fillColor=#647687;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;fontColor=#ffffff;" value="整理項目" vertex="1">
+          <mxGeometry width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="scr3-46" parent="scr3-44" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=#314354;overflow=hidden;fillColor=#647687;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;fontColor=#ffffff;" value="内容" vertex="1">
+          <mxGeometry width="760" height="40" as="geometry" x="160" />
+        </mxCell>
+        <mxCell id="scr3-47" parent="scr3-43" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry y="40" width="920" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="scr3-48" parent="scr3-47" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="画面名" vertex="1">
+          <mxGeometry width="160" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="scr3-49" parent="scr3-47" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="トップページ（予約画面）" vertex="1">
+          <mxGeometry width="760" height="44" as="geometry" x="160" />
+        </mxCell>
+        <mxCell id="scr3-50" parent="scr3-43" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry y="84" width="920" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="scr3-51" parent="scr3-50" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="URL" vertex="1">
+          <mxGeometry width="160" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="scr3-52" parent="scr3-50" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="/top" vertex="1">
+          <mxGeometry width="760" height="44" as="geometry" x="160" />
+        </mxCell>
+        <mxCell id="scr3-53" parent="scr3-43" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry y="128" width="920" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="scr3-54" parent="scr3-53" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="画面概要" vertex="1">
+          <mxGeometry width="160" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="scr3-55" parent="scr3-53" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="ログイン後の学生が最初に表示する画面。左に使用状況、右に予約状況を表示し、予約の登録とキャンセルを行う。情報編集ボタンで、登録情報を編集するポップアップを表示する。ログアウトへの導線を配置する" vertex="1">
+          <mxGeometry width="760" height="58" as="geometry" x="160" />
+        </mxCell>
+        <mxCell id="scr3-56" parent="scr3-43" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry y="186" width="920" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="scr3-57" parent="scr3-56" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="初期表示内容 / 初期表示ロジック" vertex="1">
+          <mxGeometry width="160" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="scr3-58" parent="scr3-56" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="画面表示時に、使用状況取得APIと予約状況取得APIを呼び出し、シャワー室1・2の使用状況と、当日の予約状況を表示する。予約する欄の日付は「当日」を初期値とする" vertex="1">
+          <mxGeometry width="760" height="58" as="geometry" x="160" />
+        </mxCell>
+        <mxCell id="scr3-59" parent="scr3-43" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry y="244" width="920" height="226" as="geometry" />
+        </mxCell>
+        <mxCell id="scr3-60" parent="scr3-59" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="表示項目" vertex="1">
+          <mxGeometry width="160" height="226" as="geometry" />
+        </mxCell>
+        <mxCell id="scr3-61" parent="scr3-59" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="・画面タイトル、情報編集ボタン、ログアウトボタン&lt;br&gt;【使用状況】&lt;br&gt;・シャワー室1・2ごとの、使用中の学生の学年・氏名（いなければ「空」、利用時間外は「利用時間外」）&lt;br&gt;・更新ボタン&lt;br&gt;【予約状況】&lt;br&gt;・当日／翌日の切り替えボタン&lt;br&gt;・予約の一覧（時間、シャワー室、学年・氏名）。自分の予約の行には「（自分）」とキャンセルボタンを表示する&lt;br&gt;【予約する】&lt;br&gt;・日付、シャワー室、時間の選択欄、予約するボタン" vertex="1">
+          <mxGeometry width="760" height="226" as="geometry" x="160" />
+        </mxCell>
+        <mxCell id="scr3-62" parent="scr3-43" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry y="470" width="920" height="79" as="geometry" />
+        </mxCell>
+        <mxCell id="scr3-63" parent="scr3-62" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="入力項目" vertex="1">
+          <mxGeometry width="160" height="79" as="geometry" />
+        </mxCell>
+        <mxCell id="scr3-64" parent="scr3-62" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="・予約する日付（当日／翌日）&lt;br&gt;・シャワー室（1／2）&lt;br&gt;・開始時刻（選択式）" vertex="1">
+          <mxGeometry width="760" height="79" as="geometry" x="160" />
+        </mxCell>
+        <mxCell id="scr3-65" parent="scr3-43" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry y="549" width="920" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="scr3-66" parent="scr3-65" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="入力制限" vertex="1">
+          <mxGeometry width="160" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="scr3-67" parent="scr3-65" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="・すべて必須（選択式）&lt;br&gt;・日付は当日と翌日のみ。時間は10:00〜22:45の15分刻み。シャワー室は1か2&lt;br&gt;・過去の枠、開始済みの枠は選択できない&lt;br&gt;・すでに予約されている枠、同じ時間帯にすでに自分の予約がある枠は予約できない" vertex="1">
+          <mxGeometry width="760" height="100" as="geometry" x="160" />
+        </mxCell>
+        <mxCell id="scr3-68" parent="scr3-43" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry y="649" width="920" height="142" as="geometry" />
+        </mxCell>
+        <mxCell id="scr3-69" parent="scr3-68" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="ボタン / リンク" vertex="1">
+          <mxGeometry width="160" height="142" as="geometry" />
+        </mxCell>
+        <mxCell id="scr3-70" parent="scr3-68" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="・情報編集ボタン&lt;br&gt;・ログアウトボタン&lt;br&gt;・更新ボタン&lt;br&gt;・当日／翌日の切り替えボタン&lt;br&gt;・キャンセルボタン（自分の予約の行）&lt;br&gt;・予約するボタン" vertex="1">
+          <mxGeometry width="760" height="142" as="geometry" x="160" />
+        </mxCell>
+        <mxCell id="scr3-71" parent="scr3-43" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry y="791" width="920" height="331" as="geometry" />
+        </mxCell>
+        <mxCell id="scr3-72" parent="scr3-71" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="ボタン / リンク 押下時の動作" vertex="1">
+          <mxGeometry width="160" height="331" as="geometry" />
+        </mxCell>
+        <mxCell id="scr3-73" parent="scr3-71" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="・情報編集ボタン&lt;br&gt;　→登録情報編集ポップアップを表示する（画面遷移なし。詳細は「登録情報編集ポップアップ」のページを参照）&lt;br&gt;・ログアウトボタン&lt;br&gt;　→ログアウト処理を行い、ログイン画面へ遷移する&lt;br&gt;・更新ボタン&lt;br&gt;　→使用状況取得APIと予約状況取得APIを呼び出し、使用状況と予約状況を最新の内容に更新する（画面遷移なし）&lt;br&gt;・当日／翌日の切り替えボタン&lt;br&gt;　→予約状況の一覧を、選んだ日付の内容に切り替える（画面遷移なし）&lt;br&gt;・キャンセルボタン&lt;br&gt;　→予約キャンセルAPIを呼び出し、成功した場合は予約状況を更新する&lt;br&gt;・予約するボタン&lt;br&gt;　→入力内容をチェックして、予約登録APIを呼び出し、成功した場合は予約状況を更新する。失敗した場合は、エラーメッセージを表示する" vertex="1">
+          <mxGeometry width="760" height="331" as="geometry" x="160" />
+        </mxCell>
+        <mxCell id="scr3-74" parent="scr3-43" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry y="1122" width="920" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="scr3-75" parent="scr3-74" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="画面遷移元" vertex="1">
+          <mxGeometry width="160" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="scr3-76" parent="scr3-74" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="ログイン画面" vertex="1">
+          <mxGeometry width="760" height="44" as="geometry" x="160" />
+        </mxCell>
+        <mxCell id="scr3-77" parent="scr3-43" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry y="1166" width="920" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="scr3-78" parent="scr3-77" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="画面遷移先" vertex="1">
+          <mxGeometry width="160" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="scr3-79" parent="scr3-77" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="ログイン画面（ログアウト時）。情報編集ボタンでは、ページ遷移はせず、登録情報編集ポップアップを表示する" vertex="1">
+          <mxGeometry width="760" height="58" as="geometry" x="160" />
+        </mxCell>
+        <mxCell id="scr3-80" parent="scr3-43" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry y="1224" width="920" height="142" as="geometry" />
+        </mxCell>
+        <mxCell id="scr3-81" parent="scr3-80" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="利用API" vertex="1">
+          <mxGeometry width="160" height="142" as="geometry" />
+        </mxCell>
+        <mxCell id="scr3-82" parent="scr3-80" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="・使用状況取得API（GET /usage）&lt;br&gt;・予約状況取得API（GET /reservations）&lt;br&gt;・予約登録API（POST /reservations）&lt;br&gt;・予約キャンセルAPI（DELETE /reservations/{reservation_id}）&lt;br&gt;・ログアウトAPI（POST /logout）&lt;br&gt;・（登録情報編集ポップアップで使用）自分の学生情報取得API、自分の学生情報更新API" vertex="1">
+          <mxGeometry width="760" height="142" as="geometry" x="160" />
+        </mxCell>
+        <mxCell id="scr3-83" parent="scr3-43" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry y="1366" width="920" height="121" as="geometry" />
+        </mxCell>
+        <mxCell id="scr3-84" parent="scr3-83" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="エラーメッセージ" vertex="1">
+          <mxGeometry width="160" height="121" as="geometry" />
+        </mxCell>
+        <mxCell id="scr3-85" parent="scr3-83" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="・過去の枠を選んだ場合：「過去の時間は予約できません」&lt;br&gt;・先に予約された場合：「この枠はすでに予約されています」&lt;br&gt;・同じ時間帯に自分の予約がある場合：「同じ時間帯にすでに予約があります」&lt;br&gt;・開始済みの予約のキャンセル：「開始した予約はキャンセルできません」&lt;br&gt;・取得失敗：「情報を取得できませんでした。更新ボタンをもう一度押してください」" vertex="1">
+          <mxGeometry width="760" height="121" as="geometry" x="160" />
+        </mxCell>
+        <mxCell id="scr3-86" parent="scr3-43" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry y="1487" width="920" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="scr3-87" parent="scr3-86" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="表示条件・制御内容" vertex="1">
+          <mxGeometry width="160" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="scr3-88" parent="scr3-86" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="・ログイン済みの学生のみ表示する。未ログインの場合は、ログイン画面へ遷移する。教師がアクセスした場合は、学生一覧画面へ遷移する&lt;br&gt;・使用状況は、現在の時刻が含まれる15分の枠を予約している学生を「使用中」として表示する&lt;br&gt;・使用状況と予約状況は自動では更新せず、更新ボタンで更新する" vertex="1">
+          <mxGeometry width="760" height="100" as="geometry" x="160" />
+        </mxCell>
+        <mxCell id="scr3-89" parent="scr3-43" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry y="1587" width="920" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="scr3-90" parent="scr3-89" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="対象ユーザー / 権限" vertex="1">
+          <mxGeometry width="160" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="scr3-91" parent="scr3-89" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="学生" vertex="1">
+          <mxGeometry width="760" height="44" as="geometry" x="160" />
+        </mxCell>
+        <mxCell id="scr3-92" parent="scr3-43" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry y="1631" width="920" height="79" as="geometry" />
+        </mxCell>
+        <mxCell id="scr3-93" parent="scr3-92" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="備考" vertex="1">
+          <mxGeometry width="160" height="79" as="geometry" />
+        </mxCell>
+        <mxCell id="scr3-94" parent="scr3-92" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="他の学生には、学年と氏名のみを表示する（ログインIDやメールアドレスは表示しない）。使用状況は、予約をもとに求めるため、予約せずに使った場合は反映されない。登録情報編集ポップアップで更新に成功した場合は、使用状況と予約状況を最新の内容にする（名前や学年の変更を反映するため）" vertex="1">
+          <mxGeometry width="760" height="79" as="geometry" x="160" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="画面設計書（情報編集ポップアップ）" id="scr4">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="scr4-1" parent="1" style="whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;画面設計書&lt;/font&gt;" vertex="1">
+          <mxGeometry x="40" y="10" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="scr4-2" parent="1" style="whiteSpace=wrap;html=1;align=left;" value="&lt;ul&gt;&lt;li&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;【登録情報編集ポップアップ】画面名、URL、画面概要、初期表示内容、表示項目、入力項目、入力制限、ボタン動作、利用APIなどを整理する&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;ワイヤーフレームで「どこに何を表示するのか」を示し、画面設計の表で各項目の仕様を整理する&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;" vertex="1">
+          <mxGeometry x="200" y="10" width="920" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="scr4-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;ワイヤーフレーム&lt;/b&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry x="120" y="110" width="450" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="scr4-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry x="120" y="140" width="920" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="scr4-5" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;画面設計&lt;/b&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry x="120" y="590" width="450" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="scr4-6" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 23px;&quot;&gt;&lt;b&gt;予約管理システム&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry x="130" y="150" width="360" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="scr4-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="情報編集" vertex="1">
+          <mxGeometry x="800" y="152" width="110" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="scr4-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="ログアウト" vertex="1">
+          <mxGeometry x="920" y="152" width="110" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="scr4-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999999;verticalAlign=top;" value="&lt;font color=&quot;#666666&quot;&gt;使用状況&lt;/font&gt;" vertex="1">
+          <mxGeometry x="140" y="200" width="240" height="345" as="geometry" />
+        </mxCell>
+        <mxCell id="scr4-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999999;verticalAlign=top;" value="&lt;font color=&quot;#666666&quot;&gt;予約状況&lt;/font&gt;" vertex="1">
+          <mxGeometry x="780" y="200" width="250" height="345" as="geometry" />
+        </mxCell>
+        <mxCell id="scr4-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry x="400" y="175" width="360" height="375" as="geometry" />
+        </mxCell>
+        <mxCell id="scr4-12" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;b&gt;登録情報の編集&lt;/b&gt;" vertex="1">
+          <mxGeometry x="415" y="183" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="scr4-13" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="学生番号" vertex="1">
+          <mxGeometry x="415" y="226" width="115" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="scr4-14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=6;fontColor=#666666;fillColor=#f5f5f5;" value="20230001（変更不可）" vertex="1">
+          <mxGeometry x="535" y="226" width="210" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="scr4-15" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="名前" vertex="1">
+          <mxGeometry x="415" y="276" width="115" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="scr4-16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=6;" value="山田 太郎" vertex="1">
+          <mxGeometry x="535" y="276" width="210" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="scr4-17" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="学年" vertex="1">
+          <mxGeometry x="415" y="326" width="115" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="scr4-18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=6;" value="2年" vertex="1">
+          <mxGeometry x="535" y="326" width="210" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="scr4-19" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="所属部活（任意）" vertex="1">
+          <mxGeometry x="415" y="376" width="115" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="scr4-20" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=6;" value="サッカー部" vertex="1">
+          <mxGeometry x="535" y="376" width="210" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="scr4-21" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="メールアドレス" vertex="1">
+          <mxGeometry x="415" y="426" width="115" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="scr4-22" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=6;" value="s20230001@example.ac.jp" vertex="1">
+          <mxGeometry x="535" y="426" width="210" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="scr4-23" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="更新する" vertex="1">
+          <mxGeometry x="430" y="490" width="140" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="scr4-24" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="閉じる" vertex="1">
+          <mxGeometry x="590" y="490" width="140" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="scr4-25" parent="1" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;fontSize=14;" value="" vertex="1">
+          <mxGeometry x="120" y="632" width="920" height="1178" as="geometry" />
+        </mxCell>
+        <mxCell id="scr4-26" parent="scr4-25" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry y="0" width="920" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="scr4-27" parent="scr4-26" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=#314354;overflow=hidden;fillColor=#647687;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;fontColor=#ffffff;" value="整理項目" vertex="1">
+          <mxGeometry width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="scr4-28" parent="scr4-26" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=#314354;overflow=hidden;fillColor=#647687;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;fontColor=#ffffff;" value="内容" vertex="1">
+          <mxGeometry width="760" height="40" as="geometry" x="160" />
+        </mxCell>
+        <mxCell id="scr4-29" parent="scr4-25" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry y="40" width="920" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="scr4-30" parent="scr4-29" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="画面名" vertex="1">
+          <mxGeometry width="160" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="scr4-31" parent="scr4-29" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="登録情報編集ポップアップ（トップページ上）" vertex="1">
+          <mxGeometry width="760" height="44" as="geometry" x="160" />
+        </mxCell>
+        <mxCell id="scr4-32" parent="scr4-25" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry y="84" width="920" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="scr4-33" parent="scr4-32" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="URL" vertex="1">
+          <mxGeometry width="160" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="scr4-34" parent="scr4-32" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="なし（トップページ「/top」の上に重ねて表示する）" vertex="1">
+          <mxGeometry width="760" height="44" as="geometry" x="160" />
+        </mxCell>
+        <mxCell id="scr4-35" parent="scr4-25" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry y="128" width="920" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="scr4-36" parent="scr4-35" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="画面概要" vertex="1">
+          <mxGeometry width="160" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="scr4-37" parent="scr4-35" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="トップページの情報編集ボタンを押すと表示される、ログイン中の学生が自分の登録情報を編集するポップアップ" vertex="1">
+          <mxGeometry width="760" height="58" as="geometry" x="160" />
+        </mxCell>
+        <mxCell id="scr4-38" parent="scr4-25" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry y="186" width="920" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="scr4-39" parent="scr4-38" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="初期表示内容 / 初期表示ロジック" vertex="1">
+          <mxGeometry width="160" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="scr4-40" parent="scr4-38" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="ポップアップを開くときに、自分の学生情報取得APIを呼び出し、現在の登録内容を入力欄に表示する。学生番号は表示のみで、変更できない" vertex="1">
+          <mxGeometry width="760" height="58" as="geometry" x="160" />
+        </mxCell>
+        <mxCell id="scr4-41" parent="scr4-25" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry y="244" width="920" height="142" as="geometry" />
+        </mxCell>
+        <mxCell id="scr4-42" parent="scr4-41" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="表示項目" vertex="1">
+          <mxGeometry width="160" height="142" as="geometry" />
+        </mxCell>
+        <mxCell id="scr4-43" parent="scr4-41" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="・ポップアップのタイトル&lt;br&gt;・学生番号（表示のみ）&lt;br&gt;・名前、学年、所属部活、メールアドレスの入力欄&lt;br&gt;・更新ボタン&lt;br&gt;・閉じるボタン&lt;br&gt;・エラーメッセージ表示欄" vertex="1">
+          <mxGeometry width="760" height="142" as="geometry" x="160" />
+        </mxCell>
+        <mxCell id="scr4-44" parent="scr4-25" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry y="386" width="920" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="scr4-45" parent="scr4-44" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="入力項目" vertex="1">
+          <mxGeometry width="160" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="scr4-46" parent="scr4-44" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="・名前&lt;br&gt;・学年&lt;br&gt;・所属部活&lt;br&gt;・メールアドレス" vertex="1">
+          <mxGeometry width="760" height="100" as="geometry" x="160" />
+        </mxCell>
+        <mxCell id="scr4-47" parent="scr4-25" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry y="486" width="920" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="scr4-48" parent="scr4-47" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="入力制限" vertex="1">
+          <mxGeometry width="160" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="scr4-49" parent="scr4-47" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="・名前、学年、メールアドレスは必須。所属部活は任意（空欄可）&lt;br&gt;・名前、学年、所属部活は10字以内&lt;br&gt;・メールアドレスは、学生専用のメールアドレスのみ&lt;br&gt;・学生番号とパスワードは変更できない（パスワードの変更は、今回の対象外）" vertex="1">
+          <mxGeometry width="760" height="100" as="geometry" x="160" />
+        </mxCell>
+        <mxCell id="scr4-50" parent="scr4-25" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry y="586" width="920" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="scr4-51" parent="scr4-50" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="ボタン / リンク" vertex="1">
+          <mxGeometry width="160" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="scr4-52" parent="scr4-50" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="・更新ボタン&lt;br&gt;・閉じるボタン" vertex="1">
+          <mxGeometry width="760" height="58" as="geometry" x="160" />
+        </mxCell>
+        <mxCell id="scr4-53" parent="scr4-25" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry y="644" width="920" height="142" as="geometry" />
+        </mxCell>
+        <mxCell id="scr4-54" parent="scr4-53" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="ボタン / リンク 押下時の動作" vertex="1">
+          <mxGeometry width="160" height="142" as="geometry" />
+        </mxCell>
+        <mxCell id="scr4-55" parent="scr4-53" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="・更新ボタン&lt;br&gt;　→入力内容をチェックして、自分の学生情報更新APIを呼び出す。成功した場合は、ポップアップを閉じて、使用状況と予約状況を最新の内容に更新する。失敗した場合は、ポップアップ内にエラーメッセージを表示して、ポップアップは閉じない&lt;br&gt;・閉じるボタン&lt;br&gt;　→変更を保存せずに、ポップアップを閉じる" vertex="1">
+          <mxGeometry width="760" height="142" as="geometry" x="160" />
+        </mxCell>
+        <mxCell id="scr4-56" parent="scr4-25" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry y="786" width="920" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="scr4-57" parent="scr4-56" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="画面遷移元" vertex="1">
+          <mxGeometry width="160" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="scr4-58" parent="scr4-56" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="トップページ（情報編集ボタン）" vertex="1">
+          <mxGeometry width="760" height="44" as="geometry" x="160" />
+        </mxCell>
+        <mxCell id="scr4-59" parent="scr4-25" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry y="830" width="920" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="scr4-60" parent="scr4-59" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="画面遷移先" vertex="1">
+          <mxGeometry width="160" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="scr4-61" parent="scr4-59" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="トップページ（ポップアップを閉じる。ページ遷移はしない）" vertex="1">
+          <mxGeometry width="760" height="44" as="geometry" x="160" />
+        </mxCell>
+        <mxCell id="scr4-62" parent="scr4-25" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry y="874" width="920" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="scr4-63" parent="scr4-62" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="利用API" vertex="1">
+          <mxGeometry width="160" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="scr4-64" parent="scr4-62" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="・自分の学生情報取得API（GET /students/me）&lt;br&gt;・自分の学生情報更新API（PUT /students/me）" vertex="1">
+          <mxGeometry width="760" height="58" as="geometry" x="160" />
+        </mxCell>
+        <mxCell id="scr4-65" parent="scr4-25" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry y="932" width="920" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="scr4-66" parent="scr4-65" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="エラーメッセージ" vertex="1">
+          <mxGeometry width="160" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="scr4-67" parent="scr4-65" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="・未入力：「（項目名）を入力してください」&lt;br&gt;・10字を超える入力：「（項目名）は10字以内で入力してください」&lt;br&gt;・学生専用以外のメールアドレス：「学生専用のメールアドレスを入力してください」&lt;br&gt;・取得失敗：「登録情報を取得できませんでした」" vertex="1">
+          <mxGeometry width="760" height="100" as="geometry" x="160" />
+        </mxCell>
+        <mxCell id="scr4-68" parent="scr4-25" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry y="1032" width="920" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="scr4-69" parent="scr4-68" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="表示条件・制御内容" vertex="1">
+          <mxGeometry width="160" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="scr4-70" parent="scr4-68" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="ログイン済みの学生のみ表示する。ポップアップの表示中は、背面のトップページを操作できない" vertex="1">
+          <mxGeometry width="760" height="44" as="geometry" x="160" />
+        </mxCell>
+        <mxCell id="scr4-71" parent="scr4-25" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry y="1076" width="920" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="scr4-72" parent="scr4-71" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="対象ユーザー / 権限" vertex="1">
+          <mxGeometry width="160" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="scr4-73" parent="scr4-71" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="学生" vertex="1">
+          <mxGeometry width="760" height="44" as="geometry" x="160" />
+        </mxCell>
+        <mxCell id="scr4-74" parent="scr4-25" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry y="1120" width="920" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="scr4-75" parent="scr4-74" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="備考" vertex="1">
+          <mxGeometry width="160" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="scr4-76" parent="scr4-74" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="編集できるのは、自分の情報のみ。ほかの学生の情報を編集することや、教師が学生の情報を編集することはできない" vertex="1">
+          <mxGeometry width="760" height="58" as="geometry" x="160" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="画面設計書（学生一覧画面）" id="scr5">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="scr5-1" parent="1" style="whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;画面設計書&lt;/font&gt;" vertex="1">
+          <mxGeometry x="40" y="10" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="scr5-2" parent="1" style="whiteSpace=wrap;html=1;align=left;" value="&lt;ul&gt;&lt;li&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;【学生一覧画面】画面名、URL、画面概要、初期表示内容、表示項目、入力項目、入力制限、ボタン動作、利用APIなどを整理する&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;ワイヤーフレームで「どこに何を表示するのか」を示し、画面設計の表で各項目の仕様を整理する&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;" vertex="1">
+          <mxGeometry x="200" y="10" width="920" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="scr5-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;ワイヤーフレーム&lt;/b&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry x="120" y="110" width="450" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="scr5-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry x="120" y="140" width="920" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="scr5-5" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;画面設計&lt;/b&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry x="120" y="590" width="450" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="scr5-6" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 23px;&quot;&gt;&lt;b&gt;予約管理システム（教師用）&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry x="130" y="150" width="360" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="scr5-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="ログアウト" vertex="1">
+          <mxGeometry x="920" y="152" width="110" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="scr5-8" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;b&gt;学生一覧&lt;/b&gt;" vertex="1">
+          <mxGeometry x="150" y="200" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="scr5-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontStyle=1;align=left;spacingLeft=6;" value="名前" vertex="1">
+          <mxGeometry x="150" y="236" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="scr5-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontStyle=1;align=left;spacingLeft=6;" value="学年" vertex="1">
+          <mxGeometry x="350" y="236" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="scr5-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontStyle=1;align=left;spacingLeft=6;" value="所属部活" vertex="1">
+          <mxGeometry x="450" y="236" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="scr5-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontStyle=1;align=left;spacingLeft=6;" value="メールアドレス" vertex="1">
+          <mxGeometry x="600" y="236" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="scr5-13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontStyle=1;align=left;spacingLeft=6;" value="" vertex="1">
+          <mxGeometry x="900" y="236" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="scr5-14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=6;" value="山田 太郎" vertex="1">
+          <mxGeometry x="150" y="266" width="200" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="scr5-15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=6;" value="2年" vertex="1">
+          <mxGeometry x="350" y="266" width="100" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="scr5-16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=6;" value="サッカー部" vertex="1">
+          <mxGeometry x="450" y="266" width="150" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="scr5-17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=6;" value="s20230001@example.ac.jp" vertex="1">
+          <mxGeometry x="600" y="266" width="300" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="scr5-18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry x="900" y="266" width="120" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="scr5-19" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="削除" vertex="1">
+          <mxGeometry x="915" y="270" width="90" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="scr5-20" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=6;" value="佐藤 花子" vertex="1">
+          <mxGeometry x="150" y="300" width="200" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="scr5-21" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=6;" value="1年" vertex="1">
+          <mxGeometry x="350" y="300" width="100" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="scr5-22" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=6;" value="吹奏楽部" vertex="1">
+          <mxGeometry x="450" y="300" width="150" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="scr5-23" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=6;" value="s20240012@example.ac.jp" vertex="1">
+          <mxGeometry x="600" y="300" width="300" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="scr5-24" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry x="900" y="300" width="120" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="scr5-25" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="削除" vertex="1">
+          <mxGeometry x="915" y="304" width="90" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="scr5-26" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=6;" value="鈴木 一郎" vertex="1">
+          <mxGeometry x="150" y="334" width="200" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="scr5-27" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=6;" value="3年" vertex="1">
+          <mxGeometry x="350" y="334" width="100" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="scr5-28" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=6;" value="" vertex="1">
+          <mxGeometry x="450" y="334" width="150" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="scr5-29" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=6;" value="s20220005@example.ac.jp" vertex="1">
+          <mxGeometry x="600" y="334" width="300" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="scr5-30" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry x="900" y="334" width="120" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="scr5-31" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="削除" vertex="1">
+          <mxGeometry x="915" y="338" width="90" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="scr5-32" parent="1" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" value="この学生を削除しますか？&lt;br&gt;&lt;br&gt;（その学生の予約も一緒に削除されます）" vertex="1">
+          <mxGeometry x="330" y="410" width="380" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="scr5-33" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="削除する" vertex="1">
+          <mxGeometry x="420" y="484" width="110" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="scr5-34" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="キャンセル" vertex="1">
+          <mxGeometry x="540" y="484" width="110" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="scr5-35" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;font color=&quot;#666666&quot;&gt;削除確認ポップアップ（案）&lt;/font&gt;" vertex="1">
+          <mxGeometry x="330" y="388" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="scr5-36" parent="1" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;fontSize=14;" value="" vertex="1">
+          <mxGeometry x="120" y="632" width="920" height="1045" as="geometry" />
+        </mxCell>
+        <mxCell id="scr5-37" parent="scr5-36" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry y="0" width="920" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="scr5-38" parent="scr5-37" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=#314354;overflow=hidden;fillColor=#647687;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;fontColor=#ffffff;" value="整理項目" vertex="1">
+          <mxGeometry width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="scr5-39" parent="scr5-37" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=#314354;overflow=hidden;fillColor=#647687;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;fontColor=#ffffff;" value="内容" vertex="1">
+          <mxGeometry width="760" height="40" as="geometry" x="160" />
+        </mxCell>
+        <mxCell id="scr5-40" parent="scr5-36" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry y="40" width="920" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="scr5-41" parent="scr5-40" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="画面名" vertex="1">
+          <mxGeometry width="160" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="scr5-42" parent="scr5-40" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="学生一覧画面（教師専用画面）" vertex="1">
+          <mxGeometry width="760" height="44" as="geometry" x="160" />
+        </mxCell>
+        <mxCell id="scr5-43" parent="scr5-36" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry y="84" width="920" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="scr5-44" parent="scr5-43" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="URL" vertex="1">
+          <mxGeometry width="160" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="scr5-45" parent="scr5-43" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="/students" vertex="1">
+          <mxGeometry width="760" height="44" as="geometry" x="160" />
+        </mxCell>
+        <mxCell id="scr5-46" parent="scr5-36" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry y="128" width="920" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="scr5-47" parent="scr5-46" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="画面概要" vertex="1">
+          <mxGeometry width="160" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="scr5-48" parent="scr5-46" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="登録されている学生情報を一覧で表示し、卒業などで今後利用しない学生の情報を削除する、教師専用の画面" vertex="1">
+          <mxGeometry width="760" height="58" as="geometry" x="160" />
+        </mxCell>
+        <mxCell id="scr5-49" parent="scr5-36" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry y="186" width="920" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="scr5-50" parent="scr5-49" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="初期表示内容 / 初期表示ロジック" vertex="1">
+          <mxGeometry width="160" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="scr5-51" parent="scr5-49" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="画面表示時に、学生一覧取得APIを呼び出し、登録されている学生の情報を一覧で表示する" vertex="1">
+          <mxGeometry width="760" height="44" as="geometry" x="160" />
+        </mxCell>
+        <mxCell id="scr5-52" parent="scr5-36" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry y="230" width="920" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="scr5-53" parent="scr5-52" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="表示項目" vertex="1">
+          <mxGeometry width="160" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="scr5-54" parent="scr5-52" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="・画面タイトル、ログアウトボタン&lt;br&gt;・学生の一覧（名前、学年、所属部活、メールアドレス、削除ボタン）" vertex="1">
+          <mxGeometry width="760" height="58" as="geometry" x="160" />
+        </mxCell>
+        <mxCell id="scr5-55" parent="scr5-36" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry y="288" width="920" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="scr5-56" parent="scr5-55" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="入力項目" vertex="1">
+          <mxGeometry width="160" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="scr5-57" parent="scr5-55" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="なし" vertex="1">
+          <mxGeometry width="760" height="44" as="geometry" x="160" />
+        </mxCell>
+        <mxCell id="scr5-58" parent="scr5-36" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry y="332" width="920" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="scr5-59" parent="scr5-58" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="入力制限" vertex="1">
+          <mxGeometry width="160" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="scr5-60" parent="scr5-58" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="なし" vertex="1">
+          <mxGeometry width="760" height="44" as="geometry" x="160" />
+        </mxCell>
+        <mxCell id="scr5-61" parent="scr5-36" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry y="376" width="920" height="79" as="geometry" />
+        </mxCell>
+        <mxCell id="scr5-62" parent="scr5-61" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="ボタン / リンク" vertex="1">
+          <mxGeometry width="160" height="79" as="geometry" />
+        </mxCell>
+        <mxCell id="scr5-63" parent="scr5-61" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="・削除ボタン（学生ごと）&lt;br&gt;・削除確認ポップアップの「削除する」「キャンセル」ボタン（案）&lt;br&gt;・ログアウトボタン" vertex="1">
+          <mxGeometry width="760" height="79" as="geometry" x="160" />
+        </mxCell>
+        <mxCell id="scr5-64" parent="scr5-36" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry y="455" width="920" height="205" as="geometry" />
+        </mxCell>
+        <mxCell id="scr5-65" parent="scr5-64" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="ボタン / リンク 押下時の動作" vertex="1">
+          <mxGeometry width="160" height="205" as="geometry" />
+        </mxCell>
+        <mxCell id="scr5-66" parent="scr5-64" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="・削除ボタン&lt;br&gt;　→削除確認ポップアップを表示する（案）&lt;br&gt;・削除確認ポップアップの「削除する」ボタン&lt;br&gt;　→学生削除APIを呼び出し、成功した場合は、一覧から該当の学生を取り除く（その学生の予約も一緒に削除される）&lt;br&gt;・削除確認ポップアップの「キャンセル」ボタン&lt;br&gt;　→ポップアップを閉じる&lt;br&gt;・ログアウトボタン&lt;br&gt;　→ログアウト処理を行い、ログイン画面へ遷移する" vertex="1">
+          <mxGeometry width="760" height="205" as="geometry" x="160" />
+        </mxCell>
+        <mxCell id="scr5-67" parent="scr5-36" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry y="660" width="920" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="scr5-68" parent="scr5-67" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="画面遷移元" vertex="1">
+          <mxGeometry width="160" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="scr5-69" parent="scr5-67" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="ログイン画面" vertex="1">
+          <mxGeometry width="760" height="44" as="geometry" x="160" />
+        </mxCell>
+        <mxCell id="scr5-70" parent="scr5-36" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry y="704" width="920" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="scr5-71" parent="scr5-70" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="画面遷移先" vertex="1">
+          <mxGeometry width="160" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="scr5-72" parent="scr5-70" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="ログイン画面" vertex="1">
+          <mxGeometry width="760" height="44" as="geometry" x="160" />
+        </mxCell>
+        <mxCell id="scr5-73" parent="scr5-36" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry y="748" width="920" height="79" as="geometry" />
+        </mxCell>
+        <mxCell id="scr5-74" parent="scr5-73" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="利用API" vertex="1">
+          <mxGeometry width="160" height="79" as="geometry" />
+        </mxCell>
+        <mxCell id="scr5-75" parent="scr5-73" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="・学生一覧取得API（GET /students）&lt;br&gt;・学生削除API（DELETE /students/{login_id}）&lt;br&gt;・ログアウトAPI（POST /logout）" vertex="1">
+          <mxGeometry width="760" height="79" as="geometry" x="160" />
+        </mxCell>
+        <mxCell id="scr5-76" parent="scr5-36" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry y="827" width="920" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="scr5-77" parent="scr5-76" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="エラーメッセージ" vertex="1">
+          <mxGeometry width="160" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="scr5-78" parent="scr5-76" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="・一覧の取得失敗：「学生一覧を取得できませんでした」&lt;br&gt;・削除の失敗：「削除できませんでした。もう一度お試しください」" vertex="1">
+          <mxGeometry width="760" height="58" as="geometry" x="160" />
+        </mxCell>
+        <mxCell id="scr5-79" parent="scr5-36" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry y="885" width="920" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="scr5-80" parent="scr5-79" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="表示条件・制御内容" vertex="1">
+          <mxGeometry width="160" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="scr5-81" parent="scr5-79" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="ログイン済みの教師のみ表示する。未ログインの場合は、ログイン画面へ遷移する。学生がアクセスした場合は、トップページへ遷移する" vertex="1">
+          <mxGeometry width="760" height="58" as="geometry" x="160" />
+        </mxCell>
+        <mxCell id="scr5-82" parent="scr5-36" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry y="943" width="920" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="scr5-83" parent="scr5-82" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="対象ユーザー / 権限" vertex="1">
+          <mxGeometry width="160" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="scr5-84" parent="scr5-82" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="教師" vertex="1">
+          <mxGeometry width="760" height="44" as="geometry" x="160" />
+        </mxCell>
+        <mxCell id="scr5-85" parent="scr5-36" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" value="" vertex="1">
+          <mxGeometry y="987" width="920" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="scr5-86" parent="scr5-85" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=1;" value="備考" vertex="1">
+          <mxGeometry width="160" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="scr5-87" parent="scr5-85" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;verticalAlign=middle;spacingLeft=6;" value="教師は、予約の確認や取り消しはできない。教師のアカウントは、学生の情報を持たないため、この一覧には表示されない" vertex="1">
+          <mxGeometry width="760" height="58" as="geometry" x="160" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
