@@ -5,6 +5,42 @@
 
 職業訓練の最終課題として、企画・要件定義・設計から、実装までを一貫して取り組みました。
 
+## 画面イメージ
+
+ドアにかける「札」を、画面のデザインの中心にしています。背景は、浴室のタイルです。
+
+### ログイン
+
+学生は学生番号、教師は共用のIDで、ログインします。
+
+<img src="docs/images/login.png" alt="ログイン画面" width="760">
+
+### トップページ（学生用）
+
+左に、シャワー室ごとの使用状況を、札の形で表示します（空きは緑、使用中は赤で、学年と氏名を表示）。右に、予約状況の一覧と、予約する欄を置いています。自分の予約には、「自分」の目印と、キャンセルボタンが付きます。時間の選択肢は、過ぎた時間を出さず、予約済みの枠や、同じ時間帯に自分の予約がある枠は、選べません。
+
+<img src="docs/images/top.png" alt="トップページ。左に使用状況、右に予約状況と予約する欄" width="760">
+
+### 学生登録（確認ポップアップ）
+
+入力内容を、登録の前に、ポップアップで確認します（パスワードは、伏せ字で表示します）。
+
+<img src="docs/images/register-confirm.png" alt="学生登録の、入力内容の確認ポップアップ" width="520">
+
+### 登録情報の編集（ポップアップ）
+
+トップページの上に重ねて表示します。学生番号は変更できず、変更したい項目だけを書き換えて、更新します。
+
+<img src="docs/images/profile-edit.png" alt="登録情報の編集ポップアップ" width="760">
+
+### 学生一覧（教師用）
+
+卒業などで使わなくなった学生を、確認のポップアップのあとに、削除できます。
+
+<img src="docs/images/student-list.png" alt="学生一覧（教師用）" width="760">
+
+<img src="docs/images/student-delete-confirm.png" alt="学生の削除の確認ポップアップ。その学生の予約も一緒に削除されると注意を表示する" width="760">
+
 ## 主な機能
 
 | 利用者 | できること |
@@ -30,7 +66,7 @@
 | データベース | MySQL 8.0（Dockerで起動） |
 | 認証 | セッション（Cookie）方式。パスワードはBCryptでハッシュ化して保存 |
 
-## 画面
+## 画面の一覧
 
 | 画面 | URL | 対象 |
 | --- | --- | --- |
@@ -48,7 +84,7 @@
 ├── frontend/           React のプロジェクト
 ├── backend/            Spring Boot のプロジェクト
 ├── db/init/            MySQL の初期化SQL（テーブル作成、初期データ）
-├── docs/               設計書（企画、要件定義、ER図、画面遷移図、画面設計書、API一覧、API仕様書）
+├── docs/               設計書（企画、要件定義、ER図、画面遷移図、画面設計書、API一覧、API仕様書）と、画面のスクリーンショット（images）
 ├── scripts/            動作確認用のスクリプト
 ├── docker-compose.yml  MySQL の起動設定
 └── README.md
@@ -93,6 +129,13 @@
 
 ```
 bash scripts/test-step4-2.sh
+```
+
+画面の確認用に、サンプルの学生の予約を入れることもできます（実行した時刻に合わせた「使用中」の予約と、明日の予約が入ります）。消すときは、`clear-sample-reservations.sql` を使います。
+
+```
+docker compose exec -T mysql mysql -u reservation_user -preservation_pass reservation_db < scripts/sample-reservations.sql
+docker compose exec -T mysql mysql -u reservation_user -preservation_pass reservation_db < scripts/clear-sample-reservations.sql
 ```
 
 ## 学生専用のメールアドレス
