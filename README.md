@@ -62,6 +62,7 @@
 | 区分 | 使用技術 |
 | --- | --- |
 | フロントエンド | React 19、Vite、React Router |
+| テスト | Vitest、Testing Library（フロントエンド） |
 | バックエンド | Java 21、Spring Boot 4.0（Spring MVC、Spring Data JPA、Spring Security）、Maven |
 | データベース | MySQL 8.0（Dockerで起動） |
 | 認証 | セッション（Cookie）方式。パスワードはBCryptでハッシュ化して保存 |
@@ -136,6 +137,19 @@ bash scripts/test-step4-2.sh
 ```
 docker compose exec -T mysql mysql -u reservation_user -preservation_pass reservation_db < scripts/sample-reservations.sql
 docker compose exec -T mysql mysql -u reservation_user -preservation_pass reservation_db < scripts/clear-sample-reservations.sql
+```
+
+## テスト
+
+### フロントエンド
+
+画面の動き（ログイン、学生登録と確認ポップアップ、使用状況・予約状況の表示、予約とキャンセル、情報編集、学生の削除、権限による画面の出し分け、入力チェック）を、55件の自動テストで確認します。
+バックエンドとの通信は、テストの中で、仮のサーバーに置き換えているので、MySQLやバックエンドを起動しなくても、実行できます。
+
+```
+cd frontend
+npm install
+npm test
 ```
 
 ## 学生専用のメールアドレス
