@@ -1,0 +1,687 @@
+/*
+  デザインの考え方：浴室のドアにかける「札」。
+  背景は、浴室のタイル（目地の線）。主役の入力・操作は、札の形をした白い板にまとめる。
+  「空き」「使用中」のような状態は、札の色（トップページで使う）で伝える。
+*/
+:root {
+  --tile: #e6f1f0;        /* 浴室タイルの水色 */
+  --grout: #cde2e0;       /* タイルの目地 */
+  --ink: #12303b;         /* 文字と札の縁（深い藍） */
+  --plate: #ffffff;       /* 札の白 */
+  --muted: #566f7a;       /* 補足の文字 */
+  --aqua: #1a7a87;        /* 主な操作ボタン */
+  --aqua-dark: #135f6a;
+  --occupied: #c23b2e;    /* 使用中・エラー（ドアの札の赤） */
+  --vacant: #25805a;      /* 空き・完了 */
+  --focus: #f2b705;       /* キーボード操作の目印 */
+
+  --font-body: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'BIZ UDPGothic', 'Yu Gothic UI', 'Meiryo',
+    system-ui, sans-serif;
+  --font-title: 'Hiragino Maru Gothic ProN', 'BIZ UDPGothic', 'Yu Gothic UI', 'Meiryo', system-ui, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--ink);
+  font-family: var(--font-body);
+  line-height: 1.7;
+  background-color: var(--tile);
+  background-image: linear-gradient(var(--grout) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grout) 1px, transparent 1px);
+  background-size: 44px 44px;
+}
+
+/* キーボードで操作したときの目印 */
+:focus-visible {
+  outline: 3px solid var(--ink);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 6px var(--focus);
+}
+
+/* ---------- 画面の枠 ---------- */
+.stage {
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 3.25rem 1rem 3rem;
+}
+
+/* ---------- 札（白い板） ---------- */
+.plate {
+  position: relative;
+  width: min(100%, 26rem);
+  padding: 2.75rem 1.75rem 1.75rem;
+  background: var(--plate);
+  border: 3px solid var(--ink);
+  border-radius: 1.75rem;
+  box-shadow: inset 0 0 0 6px var(--plate), inset 0 0 0 8px var(--ink);
+}
+
+.plate-wide {
+  width: min(100%, 32rem);
+}
+
+/* 札をかけるための穴 */
+.plate::before {
+  content: '';
+  position: absolute;
+  top: 0.9rem;
+  left: 50%;
+  width: 1rem;
+  height: 1rem;
+  margin-left: -0.5rem;
+  background: var(--tile);
+  border: 3px solid var(--ink);
+  border-radius: 50%;
+}
+
+.plate-title {
+  margin: 0;
+  font-family: var(--font-title);
+  font-size: 1.6rem;
+  line-height: 1.35;
+  letter-spacing: 0.04em;
+  text-align: center;
+}
+
+.plate-sub {
+  margin: 0.25rem 0 1.5rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+.note {
+  margin: 0 0 1.25rem;
+  text-align: center;
+}
+
+/* ---------- 入力欄 ---------- */
+.field {
+  margin-bottom: 1.15rem;
+}
+
+.field-label {
+  display: block;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.field-optional {
+  margin-left: 0.5rem;
+  padding: 0.05rem 0.5rem;
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-weight: 400;
+  border: 1px solid var(--muted);
+  border-radius: 999px;
+}
+
+.field-hint {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.field-input {
+  display: block;
+  width: 100%;
+  min-height: 2.75rem;
+  margin-top: 0.3rem;
+  padding: 0.5rem 0.75rem;
+  color: var(--ink);
+  font: inherit;
+  background: #f8fbfb;
+  border: 2px solid var(--ink);
+  border-radius: 0.7rem;
+}
+
+.field-input[aria-invalid='true'] {
+  border-color: var(--occupied);
+  background: #fff7f6;
+}
+
+.field-error {
+  margin: 0.3rem 0 0;
+  color: var(--occupied);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+/* ---------- メッセージ ---------- */
+.alert,
+.notice {
+  margin: 0 0 1.25rem;
+  padding: 0.65rem 0.9rem;
+  font-size: 0.95rem;
+  background: #fff7f6;
+  border: 2px solid var(--occupied);
+  border-radius: 0.7rem;
+}
+
+.alert p {
+  margin: 0;
+  font-weight: 700;
+}
+
+.alert ul {
+  margin: 0.3rem 0 0;
+  padding-left: 1.2rem;
+}
+
+.notice {
+  background: #f2fbf6;
+  border-color: var(--vacant);
+}
+
+/* ---------- ボタン ---------- */
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.button {
+  display: inline-flex;
+  flex: 1 1 9rem;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.9rem;
+  padding: 0.5rem 1rem;
+  font: inherit;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid var(--ink);
+  border-radius: 0.8rem;
+}
+
+.button-primary {
+  color: #ffffff;
+  background: var(--aqua);
+}
+
+.button-primary:hover:not(:disabled) {
+  background: var(--aqua-dark);
+}
+
+.button-secondary {
+  color: var(--ink);
+  background: var(--plate);
+}
+
+.button-secondary:hover:not(:disabled) {
+  background: var(--tile);
+}
+
+.button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+/* ---------- ポップアップ ---------- */
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 3.25rem 1rem 2rem;
+  overflow-y: auto;
+  background: rgba(18, 48, 59, 0.6);
+}
+
+.plate-dialog {
+  width: min(100%, 28rem);
+}
+
+.dialog-title {
+  margin: 0 0 1.25rem;
+  font-family: var(--font-title);
+  font-size: 1.25rem;
+  line-height: 1.4;
+  text-align: center;
+}
+
+/* 確認ポップアップの、項目と内容の一覧 */
+.summary {
+  display: grid;
+  grid-template-columns: 7.5rem 1fr;
+  gap: 0.45rem 0.75rem;
+  margin: 0;
+}
+
+.summary dt {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.summary dd {
+  margin: 0;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 30rem) {
+  .plate {
+    padding-inline: 1.25rem;
+  }
+  .summary {
+    grid-template-columns: 6.5rem 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    scroll-behavior: auto !important;
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+/* =====================================================================
+   トップページ
+   ===================================================================== */
+:root {
+  --vacant-text: #1b6a49;
+}
+
+.app-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.85rem 1.25rem;
+  background: var(--plate);
+  border-bottom: 3px solid var(--ink);
+}
+
+.app-title {
+  margin: 0;
+  font-family: var(--font-title);
+  font-size: 1.3rem;
+  letter-spacing: 0.04em;
+}
+
+.app-header-actions {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.button-small {
+  flex: 0 0 auto;
+  min-height: 2.4rem;
+  padding: 0.25rem 0.9rem;
+  font-size: 0.95rem;
+}
+
+.dashboard {
+  width: min(100%, 64rem);
+  margin: 0 auto;
+  padding: 1.5rem 1rem 3rem;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: minmax(15rem, 19rem) 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+@media (max-width: 52rem) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.panel-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.panel-title {
+  margin: 0;
+  font-family: var(--font-title);
+  font-size: 1.15rem;
+}
+
+/* 右側：予約状況の白い台紙 */
+.sheet {
+  padding: 1.25rem;
+  background: var(--plate);
+  border: 3px solid var(--ink);
+  border-radius: 1rem;
+}
+
+/* ---------- 使用状況：ドアの札 ---------- */
+.room-sign {
+  position: relative;
+  margin-bottom: 1.25rem;
+  padding: 1.7rem 1.25rem 1.25rem;
+  text-align: center;
+  background: var(--plate);
+  border: 3px solid var(--ink);
+  border-radius: 1.25rem;
+}
+
+.room-sign::before {
+  content: '';
+  position: absolute;
+  top: 0.65rem;
+  left: 50%;
+  width: 0.8rem;
+  height: 0.8rem;
+  margin-left: -0.4rem;
+  background: var(--tile);
+  border: 3px solid var(--ink);
+  border-radius: 50%;
+}
+
+.room-sign-name {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.room-sign-label {
+  margin: 0.25rem 0 0;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.room-sign-main {
+  margin: 0.15rem 0 0;
+  font-family: var(--font-title);
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
+.room-sign-empty {
+  font-size: 2.4rem;
+  line-height: 1.2;
+}
+
+.room-sign-vacant {
+  background: #e5f5ec;
+}
+
+.room-sign-vacant .room-sign-main {
+  color: var(--vacant-text);
+}
+
+.room-sign-occupied {
+  background: #fde8e5;
+  border-color: var(--occupied);
+}
+
+.room-sign-occupied .room-sign-main,
+.room-sign-occupied .room-sign-label {
+  color: var(--occupied);
+}
+
+.room-sign-closed {
+  background: #eef1f3;
+  border-color: var(--muted);
+}
+
+.room-sign-closed .room-sign-main,
+.room-sign-closed .room-sign-label,
+.room-sign-closed .room-sign-name {
+  color: var(--muted);
+}
+
+/* ---------- 予約状況：日付の切り替えと一覧 ---------- */
+.day-toggle {
+  display: inline-flex;
+  overflow: hidden;
+  border: 2px solid var(--ink);
+  border-radius: 0.8rem;
+}
+
+.day-toggle button {
+  min-height: 2.4rem;
+  padding: 0.3rem 0.9rem;
+  color: var(--ink);
+  font: inherit;
+  font-weight: 700;
+  background: var(--plate);
+  border: 0;
+  cursor: pointer;
+}
+
+.day-toggle button + button {
+  border-left: 2px solid var(--ink);
+}
+
+.day-toggle button[aria-pressed='true'] {
+  color: #ffffff;
+  background: var(--ink);
+}
+
+.day-toggle-date {
+  margin-left: 0.4rem;
+  font-size: 0.85rem;
+  font-weight: 400;
+}
+
+.slot-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 2px solid var(--ink);
+}
+
+.slot-row {
+  display: grid;
+  grid-template-columns: 3.6rem 6.2rem 1fr auto;
+  gap: 0.25rem 0.75rem;
+  align-items: center;
+  padding: 0.55rem 0.6rem;
+  border-bottom: 1px solid var(--grout);
+}
+
+.slot-row-mine {
+  background: #e4f4f5;
+  box-shadow: inset 4px 0 0 var(--aqua);
+}
+
+.slot-time {
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.slot-room {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.slot-person {
+  overflow-wrap: anywhere;
+}
+
+.slot-mine-tag {
+  margin-left: 0.5rem;
+  padding: 0 0.5rem;
+  color: var(--aqua-dark);
+  font-size: 0.8rem;
+  font-weight: 700;
+  border: 1px solid var(--aqua);
+  border-radius: 999px;
+}
+
+.empty-note {
+  margin: 0;
+  padding: 1rem 0.5rem;
+  color: var(--muted);
+  border-top: 2px solid var(--ink);
+}
+
+@media (max-width: 36rem) {
+  .slot-row {
+    grid-template-columns: 3.4rem 1fr auto;
+  }
+  .slot-room {
+    grid-column: 2 / 4;
+  }
+  .slot-person {
+    grid-column: 1 / 3;
+  }
+}
+
+/* ---------- 予約する欄 ---------- */
+.booking {
+  margin-top: 1.75rem;
+  padding-top: 1.25rem;
+  border-top: 2px solid var(--ink);
+}
+
+.booking .panel-title {
+  margin-bottom: 0.9rem;
+}
+
+.booking-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+}
+
+.booking-grid .field {
+  margin-bottom: 0;
+}
+
+@media (max-width: 40rem) {
+  .booking-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+select.field-input {
+  appearance: auto;
+}
+
+.booking .actions {
+  margin-top: 1.1rem;
+}
+
+.booking .button {
+  flex: 0 1 12rem;
+}
+
+/* =====================================================================
+   学生一覧画面（教師用）
+   ===================================================================== */
+.app-role {
+  margin-left: 0.75rem;
+  padding: 0.1rem 0.65rem;
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  vertical-align: middle;
+  background: var(--tile);
+  border: 2px solid var(--ink);
+  border-radius: 999px;
+}
+
+.count {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.table-wrap {
+  overflow-x: auto;
+  border-top: 2px solid var(--ink);
+}
+
+.student-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.student-table th,
+.student-table td {
+  padding: 0.65rem 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid var(--grout);
+}
+
+.student-table th {
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.student-table td:last-child {
+  text-align: right;
+}
+
+.student-email {
+  overflow-wrap: anywhere;
+}
+
+.button-danger {
+  color: var(--occupied);
+  background: var(--plate);
+  border-color: var(--occupied);
+}
+
+.button-danger:hover:not(:disabled) {
+  background: #fde8e5;
+}
+
+.button-danger-fill {
+  color: #ffffff;
+  background: var(--occupied);
+  border-color: var(--ink);
+}
+
+.button-danger-fill:hover:not(:disabled) {
+  background: #a82f24;
+}
+
+.warning {
+  margin: 1.1rem 0 0;
+  padding: 0.65rem 0.9rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  background: #fff7f6;
+  border: 2px solid var(--occupied);
+  border-radius: 0.7rem;
+}
+
+/* 画面には出さず、読み上げの道具にだけ伝える文字 */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
