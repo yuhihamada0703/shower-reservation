@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { ApiError } from '../api/client.js'
+import { STUDENT_EMAIL_HINT } from '../config.js'
 import { getMyInfo, updateMyInfo } from '../api/students.js'
 import { toProfilePayload, validateProfile } from '../validation/student.js'
 import Modal from './Modal.jsx'
@@ -119,7 +120,7 @@ export default function ProfileModal({ onClose, onSaved }) {
           <TextField
             id="profile-email"
             label="メールアドレス"
-            hint="学生専用のメールアドレス"
+            hint={STUDENT_EMAIL_HINT}
             type="email"
             value={values.email}
             onChange={handleChange('email')}

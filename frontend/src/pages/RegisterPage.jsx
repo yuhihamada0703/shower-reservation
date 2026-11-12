@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { ApiError } from '../api/client.js'
+import { STUDENT_EMAIL_HINT } from '../config.js'
 import { registerStudent } from '../api/students.js'
 import Modal from '../components/Modal.jsx'
 import TextField from '../components/TextField.jsx'
@@ -125,7 +126,7 @@ export default function RegisterPage() {
           <TextField
             id="register-email"
             label="メールアドレス"
-            hint="学生専用のメールアドレス"
+            hint={STUDENT_EMAIL_HINT}
             type="email"
             value={values.email}
             onChange={handleChange('email')}

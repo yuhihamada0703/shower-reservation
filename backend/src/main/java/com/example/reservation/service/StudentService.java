@@ -5,6 +5,7 @@ import com.example.reservation.dto.StudentUpdateRequest;
 import com.example.reservation.entity.Login;
 import com.example.reservation.entity.Role;
 import com.example.reservation.entity.Student;
+import com.example.reservation.exception.BadRequestException;
 import com.example.reservation.exception.DuplicateLoginIdException;
 import com.example.reservation.exception.NotFoundException;
 import com.example.reservation.repository.LoginRepository;
@@ -22,13 +23,16 @@ public class StudentService {
     private final LoginRepository loginRepository;
     private final StudentRepository studentRepository;
     private final PasswordEncoder passwordEncoder;
+    private final StudentEmailPolicy studentEmailPolicy;
 
     public StudentService(LoginRepository loginRepository,
                           StudentRepository studentRepository,
-                          PasswordEncoder passwordEncoder) {
+                          PasswordEncoder passwordEncoder,
+                          StudentEmailPolicy studentEmailPolicy) {
         this.loginRepository = loginRepository;
         this.studentRepository = studentRepository;
         this.passwordEncoder = passwordEncoder;
+        this.studentEmailPolicy = studentEmailPolicy;
     }
 
     /**
@@ -37,6 +41,7 @@ public class StudentService {
      */
     @Transactional
     public Student register(StudentRegisterRequest request) {
+        requireStudentEmail(request.email());
         if (loginRepository.existsById(request.loginId())) {
             throw new DuplicateLoginIdException();
         }
@@ -72,6 +77,7 @@ public class StudentService {
     /** 本人の学生情報を更新する（学生番号は変更できない） */
     @Transactional
     public Student update(String loginId, StudentUpdateRequest request) {
+        requireStudentEmail(request.email());
         Student student = studentRepository.findById(loginId).orElseThrow(NotFoundException::new);
         student.update(request.name(), request.grade(), blankToNull(request.club()), request.email());
         return student;   // 取得した Student を変更するだけで、@Transactional の終了時にDBへ反映される
@@ -87,6 +93,13 @@ public class StudentService {
             throw new NotFoundException();   // 教師のアカウントなど、学生ではないIDもここで404になる
         }
         loginRepository.deleteById(loginId);
+    }
+
+    /** メールアドレスが、学生専用のドメインでなければ、400にする（画面でもチェックしているが、API側でも必ず確認する） */
+    private void requireStudentEmail(String email) {
+        if (!studentEmailPolicy.isStudentEmail(email)) {
+            throw new BadRequestException("学生専用のメールアドレスを入力してください");
+        }
     }
 
     private static String blankToNull(String value) {

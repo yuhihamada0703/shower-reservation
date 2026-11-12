@@ -1,3 +1,5 @@
+import { isStudentEmailDomain } from '../config.js'
+
 // 画面設計書のエラーメッセージに合わせた、入力チェック。
 // バックエンドでも、同じ内容をチェックしている（画面のチェックは、早く知らせるためのもの）
 const DIGITS_ONLY = /^[0-9]+$/
@@ -29,7 +31,8 @@ function validateProfileFields(values) {
 
   if (email === '') {
     errors.email = 'メールアドレスを入力してください'
-  } else if (email.length > 255 || !EMAIL_FORMAT.test(email)) {
+  } else if (email.length > 255 || !EMAIL_FORMAT.test(email) || !isStudentEmailDomain(email)) {
+    // 形式の間違いと、学生専用ではないドメイン（例：gmail.com）を、同じメッセージで知らせる
     errors.email = '学生専用のメールアドレスを入力してください'
   }
   return errors
