@@ -1,0 +1,27 @@
+# 予約管理システム 開発用のMySQL（Docker）
+# 使い方:
+#   起動:                 docker compose up -d
+#   停止:                 docker compose stop
+#   DBを作り直す（全削除）: docker compose down -v   → もう一度 docker compose up -d
+# ※ db/init の SQL は、データ保存用ボリュームが空の「初回起動時」だけ自動で実行されます
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: reservation-mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpass        # 学習用のダミー値。公開するリポジトリには実際のパスワードを書かない
+      MYSQL_DATABASE: reservation_db
+      MYSQL_USER: reservation_user
+      MYSQL_PASSWORD: reservation_pass     # 学習用のダミー値
+      TZ: Asia/Tokyo
+    command:
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_0900_ai_ci
+      - --default-time-zone=+09:00         # 予約の日時は日本時間を基準にする
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./db/init:/docker-entrypoint-initdb.d:ro
+volumes:
+  mysql_data:

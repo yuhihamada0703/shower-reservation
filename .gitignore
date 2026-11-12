@@ -1,0 +1,32 @@
+# このフォルダの中の、すべてを、まず、Gitの管理の対象外にする
+/*
+
+# 予約管理システムに必要なものだけを、管理の対象にする（頭の ! が「対象にする」の意味）
+!/.gitignore
+!/README.md
+!/docker-compose.yml
+!/backend/
+!/db/
+!/docs/
+!/scripts/
+!/frontend/
+
+# 対象のフォルダの中でも、管理に含めないもの
+.DS_Store
+.idea/
+*.iml
+.vscode/
+
+# 動作確認で作られるCookieファイル（curl の -c で保存したもの）
+stuA.txt
+stuB.txt
+student.txt
+teacher.txt
+
+# フロントエンド（React）が作る、容量の大きいフォルダ
+/frontend/node_modules/
+/frontend/dist/
+
+# 環境ごとの設定。実際のパスワードを書いたファイルは、コミットしない
+.env
+*.local
