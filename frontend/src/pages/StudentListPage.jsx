@@ -1,8 +1,8 @@
-import { useCallback, useEffect, useState } from 'react'
-import { ApiError } from '../api/client.js'
-import { deleteStudent, listStudents } from '../api/students.js'
-import LogoutButton from '../components/LogoutButton.jsx'
-import Modal from '../components/Modal.jsx'
+import { useCallback, useEffect, useState } from "react";
+import { ApiError } from "../api/client.js";
+import { deleteStudent, listStudents } from "../api/students.js";
+import LogoutButton from "../components/LogoutButton.jsx";
+import Modal from "../components/Modal.jsx";
 
 /**
  * 学生一覧画面（/students）。教師用。
@@ -10,63 +10,73 @@ import Modal from '../components/Modal.jsx'
  * 学生を削除すると、その学生の予約も、一緒に削除される。
  */
 export default function StudentListPage() {
-  const [students, setStudents] = useState([])
-  const [loading, setLoading] = useState(true)
-  const [error, setError] = useState(null)
-  const [notice, setNotice] = useState(null)
-  const [target, setTarget] = useState(null) // 削除の確認中の学生
-  const [deleting, setDeleting] = useState(false)
+  const [students, setStudents] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+  const [notice, setNotice] = useState(null);
+  const [target, setTarget] = useState(null); // 削除の確認中の学生
+  const [deleting, setDeleting] = useState(false);
+  const [keyword, setKeyword] = useState("");
 
   const applyList = useCallback((data) => {
-    setStudents(data.students)
-    setError(null)
-    setLoading(false)
-  }, [])
+    setStudents(data.students);
+    setError(null);
+    setLoading(false);
+  }, []);
   const applyLoadError = useCallback(() => {
-    setError('学生一覧を取得できませんでした')
-    setLoading(false)
-  }, [])
+    setError("学生一覧を取得できませんでした");
+    setLoading(false);
+  }, []);
 
-  const reload = useCallback(() => listStudents().then(applyList, applyLoadError), [applyList, applyLoadError])
+  const reload = useCallback(
+    () => listStudents().then(applyList, applyLoadError),
+    [applyList, applyLoadError],
+  );
 
   // 画面を開いたときに、1回取得する
   useEffect(() => {
-    let cancelled = false
+    let cancelled = false;
     listStudents().then(
       (data) => {
-        if (!cancelled) applyList(data)
+        if (!cancelled) applyList(data);
       },
       () => {
-        if (!cancelled) applyLoadError()
+        if (!cancelled) applyLoadError();
       },
-    )
+    );
     return () => {
-      cancelled = true
-    }
-  }, [applyList, applyLoadError])
+      cancelled = true;
+    };
+  }, [applyList, applyLoadError]);
 
   // 確認ポップアップの「削除する」
   const handleDelete = async () => {
-    setDeleting(true)
-    setNotice(null)
+    setDeleting(true);
+    setNotice(null);
     try {
-      await deleteStudent(target.login_id)
-      setStudents((previous) => previous.filter((student) => student.login_id !== target.login_id))
-      setNotice(`${target.name}さんを削除しました`)
-      setError(null)
+      await deleteStudent(target.login_id);
+      setStudents((previous) =>
+        previous.filter((student) => student.login_id !== target.login_id),
+      );
+      setNotice(`${target.name}さんを削除しました`);
+      setError(null);
     } catch (e) {
       const message =
         e instanceof ApiError && e.status === 404
-          ? '対象の学生が見つかりませんでした。一覧を更新しました'
-          : '削除できませんでした。もう一度お試しください'
+          ? "対象の学生が見つかりませんでした。一覧を更新しました"
+          : "削除できませんでした。もう一度お試しください";
       // 一覧を取り直してから、メッセージを表示する（取り直すと、前のメッセージが消えるため）
-      await reload()
-      setError(message)
+      await reload();
+      setError(message);
     } finally {
-      setDeleting(false)
-      setTarget(null)
+      setDeleting(false);
+      setTarget(null);
     }
-  }
+  };
+
+  const filteredStudents = students.filter((student) =>
+    student.name.includes(keyword),
+  );
 
   return (
     <div className="app-shell">
@@ -96,17 +106,33 @@ export default function StudentListPage() {
             <h2 id="students-title" className="panel-title">
               学生一覧
             </h2>
-            {!loading && <p className="count">登録数：{students.length}人</p>}
+            {!loading && (
+              <p className="count">登録数：{filteredStudents.length}人</p>
+            )}
           </div>
+
+          <input
+            value={keyword}
+            placeholder="名前で検索"
+            aria-label="名前で検索"
+            onChange={(e) => setKeyword(e.target.value)}
+          />
 
           {loading && <p className="note">読み込んでいます…</p>}
           {!loading && students.length === 0 && !error && (
             <p className="empty-note">登録されている学生は、まだいません。</p>
           )}
-          {students.length > 0 && (
+
+          {!loading && students.length > 0 && filteredStudents.length === 0 && (
+            <p className="empty-note">一致する学生はいません。</p>
+          )}
+
+          {filteredStudents.length > 0 && (
             <div className="table-wrap">
               <table className="student-table">
-                <caption className="visually-hidden">登録されている学生の一覧</caption>
+                <caption className="visually-hidden">
+                  登録されている学生の一覧
+                </caption>
                 <thead>
                   <tr>
                     <th scope="col">名前</th>
@@ -119,11 +145,11 @@ export default function StudentListPage() {
                   </tr>
                 </thead>
                 <tbody>
-                  {students.map((student) => (
+                  {filteredStudents.map((student) => (
                     <tr key={student.login_id}>
                       <td>{student.name}</td>
                       <td>{student.grade}</td>
-                      <td>{student.club ?? ''}</td>
+                      <td>{student.club ?? ""}</td>
                       <td className="student-email">{student.email}</td>
                       <td>
                         <button
@@ -145,28 +171,43 @@ export default function StudentListPage() {
       </main>
 
       {target && (
-        <Modal title="この学生を削除しますか？" onClose={() => (deleting ? undefined : setTarget(null))}>
+        <Modal
+          title="この学生を削除しますか？"
+          onClose={() => (deleting ? undefined : setTarget(null))}
+        >
           <dl className="summary">
             <dt>名前</dt>
             <dd>{target.name}</dd>
             <dt>学年</dt>
             <dd>{target.grade}</dd>
             <dt>所属部活</dt>
-            <dd>{target.club ?? '（なし）'}</dd>
+            <dd>{target.club ?? "（なし）"}</dd>
             <dt>メールアドレス</dt>
             <dd>{target.email}</dd>
           </dl>
-          <p className="warning">この学生の予約も、一緒に削除されます。削除したあとは、元に戻せません。</p>
+          <p className="warning">
+            この学生の予約も、一緒に削除されます。削除したあとは、元に戻せません。
+          </p>
           <div className="actions">
-            <button type="button" className="button button-danger-fill" onClick={handleDelete} disabled={deleting}>
+            <button
+              type="button"
+              className="button button-danger-fill"
+              onClick={handleDelete}
+              disabled={deleting}
+            >
               削除する
             </button>
-            <button type="button" className="button button-secondary" onClick={() => setTarget(null)} disabled={deleting}>
+            <button
+              type="button"
+              className="button button-secondary"
+              onClick={() => setTarget(null)}
+              disabled={deleting}
+            >
               キャンセル
             </button>
           </div>
         </Modal>
       )}
     </div>
-  )
+  );
 }
