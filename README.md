@@ -1,11 +1,31 @@
-# 予約管理システム（学生寮のシャワー室）
+# 予約管理システム
+
+**使用状況と予約状況を、すぐに確認できる、学生寮のシャワー室の予約アプリ**
+
+## アプリケーションの概要
 
 学生寮のシャワー室を、予約制にして、使用状況と予約状況を一目で確認できるようにするWebアプリケーションです。
-着いた順に使う運用では、人が並んでいるときに自分の順番がいつか分かりにくかったため、1回15分の時間制限と予約制にして、順番を目に見えるようにすることを目的としています。
+1回の利用を15分に区切り、「いま誰が使っているか」と「このあと誰が予約しているか」を、画面で見られます。
 
-職業訓練の最終課題として、企画・要件定義・設計から、実装までを一貫して取り組みました。
+- 学生：新規登録、ログイン、予約の登録・キャンセル、使用状況・予約状況の確認、自分の情報の編集
+- 教師：ログイン、学生一覧の確認、不要になった学生の削除
 
-## 画面イメージ
+職業訓練の最終課題として、企画・要件定義・設計から、実装までを取り組みました。
+
+## 開発した背景や理由
+
+学生寮のシャワー室は、着いた順に使う運用でした。人が並んでいるときに、自分の順番がいつ来るのかが分かりにくく、待ち時間も見通せませんでした。
+そこで、1回の利用を15分に制限し、予約制にすることで、自分の順番が目に見えるようにすることを目的に、このアプリを作りました。利用するのは、寮の学生と、教師です。
+
+## 工夫した点・苦労した点
+
+<!-- TODO: 自分の言葉で書く（手順3で記入） -->
+
+## アプリケーションのURL
+
+本番環境は、用意していません。画面は、下の「画面イメージ」で確認できます。ローカルでの起動方法は、「ローカル環境での起動方法」に書いています。
+
+## アプリケーションのデモ画像
 
 ドアにかける「札」を、画面のデザインの中心にしています。背景は、浴室のタイルです。
 
@@ -41,6 +61,105 @@
 
 <img src="docs/images/student-delete-confirm.png" alt="学生の削除の確認ポップアップ。その学生の予約も一緒に削除されると注意を表示する" width="760">
 
+## 主な使用技術
+
+| 区分 | 使用技術 |
+| --- | --- |
+| フロントエンド | React 19、Vite、React Router（JavaScript） |
+| バックエンド | Java 21、Spring Boot 4.0（Spring MVC、Spring Data JPA）、Maven |
+| 認証・認可 | Spring Security（セッション＋Cookie方式）、パスワードはBCryptでハッシュ化 |
+| データベース | MySQL 8.0 |
+| インフラ・開発環境 | Docker / Docker Compose（MySQLの起動）、Git / GitHub |
+| テスト | Vitest、Testing Library（フロントエンド、55件） |
+| 設計 | draw.io（画面遷移図・ER図・画面設計書）、Mermaid（README内の図） |
+
+## ER図
+
+```mermaid
+erDiagram
+    login ||--o| students : "学生なら1件"
+    students ||--o{ reservations : "予約する"
+
+    login {
+        varchar login_id PK "学生番号、または教師の共用ID"
+        varchar password "ハッシュ化した値"
+        varchar role "STUDENT または TEACHER"
+    }
+    students {
+        varchar login_id PK,FK "login を参照"
+        varchar name "10字以内"
+        varchar grade "10字以内"
+        varchar club "任意（空欄可）"
+        varchar email "学生専用メールアドレス"
+    }
+    reservations {
+        bigint reservation_id PK
+        varchar login_id FK "students を参照"
+        tinyint room_no "1 または 2"
+        date reserved_date "予約日"
+        time start_time "開始時刻（15分刻み）"
+    }
+```
+
+- 同じ部屋・日付・時刻は、1件だけ（ユニーク制約）。同じ学生・日付・時刻も、1件だけ
+- 学生を削除すると、その学生のログイン情報と予約も、一緒に削除される（ON DELETE CASCADE）
+
+## システム構成図
+
+```mermaid
+flowchart LR
+    U["利用者<br/>（ブラウザ）"] --> F["フロントエンド<br/>React + Vite<br/>localhost:5173"]
+    F --> B["バックエンド<br/>Spring Boot<br/>localhost:8080"]
+    B --> D[("MySQL 8.0<br/>Docker<br/>localhost:3306")]
+```
+
+## ローカル環境での起動方法
+
+### 必要な環境
+
+- Java 21
+- Node.js 20.19以上、または22.12以上
+- Docker（Docker Compose）
+- Git
+
+### 手順
+
+次の3つを、同時に起動します。
+
+1. リポジトリを取得します。
+
+   ```
+   git clone https://github.com/yuhihamada0703/shower-reservation.git
+   cd shower-reservation
+   ```
+
+2. データベース（MySQL）を起動します。
+
+   ```
+   docker compose up -d
+   ```
+
+   初回起動のときに、`db/init` のSQLが自動で実行されます。作り直す場合は、`docker compose down -v` でデータを消してから、もう一度起動します。
+
+3. バックエンド（`http://localhost:8080`）を起動します。別のターミナルで、次を実行します。
+
+   ```
+   cd backend
+   ./mvnw spring-boot:run
+   ```
+
+   IntelliJ IDEA で `backend` フォルダを開いて、`ReservationApplication` を実行しても起動できます。
+
+4. フロントエンド（`http://localhost:5173`）を起動します。さらに別のターミナルで、次を実行します。
+
+   ```
+   cd frontend
+   npm install
+   npm run dev
+   ```
+
+5. ブラウザで `http://localhost:5173` を開きます。ログインできるアカウントは、「開発用のアカウント」を参照してください。
+
 ## 主な機能
 
 | 利用者 | できること |
@@ -56,16 +175,6 @@
 - 同じ学生は、同じ時間帯に、1枠しか予約できない
 - キャンセルは、予約した本人が、開始前にだけ行える
 - 使用状況は、「今の時刻が含まれる15分の枠」を予約している学生を、使用中として表示する
-
-## 技術構成
-
-| 区分 | 使用技術 |
-| --- | --- |
-| フロントエンド | React 19、Vite、React Router |
-| テスト | Vitest、Testing Library（フロントエンド） |
-| バックエンド | Java 21、Spring Boot 4.0（Spring MVC、Spring Data JPA、Spring Security）、Maven |
-| データベース | MySQL 8.0（Dockerで起動） |
-| 認証 | セッション（Cookie）方式。パスワードはBCryptでハッシュ化して保存 |
 
 ## 画面の一覧
 
@@ -90,39 +199,6 @@
 ├── docker-compose.yml  MySQL の起動設定
 └── README.md
 ```
-
-## 起動方法
-
-次の3つを、同時に起動します。
-
-1. データベース（MySQL）
-
-   ```
-   docker compose up -d
-   ```
-
-   初回起動のときに、`db/init` のSQLが自動で実行されます。作り直す場合は、`docker compose down -v` でデータを消してから、もう一度起動します。
-
-2. バックエンド（`http://localhost:8080`）
-
-   IntelliJ IDEA で `backend` フォルダを開いて、`ReservationApplication` を実行するか、次のコマンドを実行します。
-
-   ```
-   cd backend
-   ./mvnw spring-boot:run
-   ```
-
-3. フロントエンド（`http://localhost:5173`）
-
-   Node.js（20.19以上、または22.12以上）が必要です。
-
-   ```
-   cd frontend
-   npm install
-   npm run dev
-   ```
-
-ブラウザで `http://localhost:5173` を開きます。
 
 ## 動作確認
 
